@@ -6,11 +6,21 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MaterialModule } from './material.module';
+import { CalendarComponent } from './calendar/calendar.component';
+import { MaterialModule } from './core/material.module';
+import { HomeComponent } from './home/home.component';
+import { InfoComponent } from './info/info.component';
+import { MapComponent } from './map/map.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    MapComponent,
+    InfoComponent,
+    PageNotFoundComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,

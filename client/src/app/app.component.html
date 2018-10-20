@@ -6,7 +6,7 @@
             (click)="snav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <h1 class="app-name">HO-App</h1>
+    <h1 class="app-name">HO Gids</h1>
   </mat-toolbar>
 
   <mat-sidenav-container class="sidenav-container"
@@ -17,26 +17,30 @@
                  fixedTopGap="56">
       <mat-nav-list>
         <a mat-list-item
-           routerLink=".">
+           routerLink="/home"
+           (click)="snav.close()">
           <mat-icon>home</mat-icon> Home
         </a>
         <a mat-list-item
-           routerLink=".">
-          <mat-icon>info</mat-icon> Info
+           routerLink="/calendar"
+           (click)="snav.close()">
+          <mat-icon>calendar_today</mat-icon> Agenda
         </a>
         <a mat-list-item
-           routerLink=".">
+           routerLink="/map"
+           (click)="snav.close()">
           <mat-icon>map</mat-icon> Kaart
         </a>
         <a mat-list-item
-           routerLink=".">
-          <mat-icon>local_hospitale</mat-icon> Hulp
+           routerLink="/info"
+           (click)="snav.close()">
+          <mat-icon>info</mat-icon> Info
         </a>
+
       </mat-nav-list>
     </mat-sidenav>
-
     <mat-sidenav-content>
-      <p>Test</p>
+      <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

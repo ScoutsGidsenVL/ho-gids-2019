@@ -1,0 +1,42 @@
+<mat-tab-group mat-align-tabs="center">
+  <mat-tab label="Vrijdag">
+    <mat-card *ngFor="let item of friday">
+      <mat-card-title>
+        <span *ngIf="item.start">{{item.start | date:'Humm' }}</span>
+        <span *ngIf="item.start && item.end">-</span>
+        <span *ngIf="item.end">{{item.end | date:'Humm'}}</span>
+      </mat-card-title>
+      <mat-card-content>{{item.text}}</mat-card-content>
+    </mat-card>
+  </mat-tab>
+  <mat-tab label="Zaterdag">
+    <ul>
+      <li><strong>8u00-9u00:</strong> Opstaan en ontbijten</li>
+      <li><strong>9u00-10u00: </strong>Districtsmoment</li>
+      <li><strong>10u30-12u30:</strong> Markt</li>
+      <li><strong>11u30-12u00:</strong>&nbsp;VIP-receptie&nbsp;</li>
+      <li><strong>12u00-13u00:</strong> Massapicknick</li>
+      <li><strong>12u50-13u00: </strong>Jaarlieddans</li>
+      <li><strong>13u00-13u10:</strong> Speech VC</li>
+      <li><strong>13u10-13u30:</strong> Show</li>
+      <li><strong>13u50-15u40:</strong> Tak- en themamoment</li>
+      <li><strong>15u50-16u10:</strong> Zin in HO</li>
+      <li><strong>16u30-18u20: </strong>Tak- en themamoment</li>
+      <li><strong>18u40-20u00: </strong>Avondeten</li>
+      <li><strong>20u00-22u30: </strong>Jaarthemamoment op de gouwgrond</li>
+      <li><strong>22u45-23u00:</strong> Engergizer</li>
+      <li><strong>23u00-02u30: </strong>Avondprogramma</li>
+    </ul>
+  </mat-tab>
+  <mat-tab label="Zondag">
+    <ul>
+      <li><strong>8u00-9u00: </strong>Opstaan en ontbijten<br></li>
+      <li><strong>9u00-11u00: </strong>Opruim HO </li>
+      <li><strong>11u00-11u15: </strong>Jaarlieddans</li>
+      <li><strong>11u15-12u15:</strong> GOE Spel</li>
+      <li><strong>12u15 -12u30</strong>: Speech VV </li>
+      <li><strong>12u30-13u00</strong>: Middageten</li>
+      <li><strong>13u00:</strong> Einde HO voor deelnemers</li>
+    </ul>
+  </mat-tab>
+</mat-tab-group>
