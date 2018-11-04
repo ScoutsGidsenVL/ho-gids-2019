@@ -1,0 +1,8 @@
+<mat-card>
+  <mat-card-title>
+    <span *ngIf="item.start">{{item.start | date:'Humm' }}</span>
+    <span *ngIf="item.start && item.end">-</span>
+    <span *ngIf="item.end">{{item.end | date:'Humm'}}</span>
+  </mat-card-title>
+  <mat-card-content>{{item.text}}</mat-card-content>
+</mat-card>

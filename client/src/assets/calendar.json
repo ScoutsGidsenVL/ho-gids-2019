@@ -1,0 +1,152 @@
+[
+    {
+        "label": "Vrijdag",
+        "items": [
+            {
+                "start": "2019-08-23T19:00:00",
+                "end": null,
+                "text": "Aankomst"
+            },
+            {
+                "start": "2019-08-23T20:00:00",
+                "end": "2019-08-23T22:45:00",
+                "text": "Onthaal en instapacitiviteit op de gouwgrond"
+            },
+            {
+                "start": "2019-08-23T23:15:00",
+                "end": "2019-08-24T00:00:00",
+                "text": "Opening met jaarlied en jaardans"
+            },
+            {
+                "start": "2019-08-24T00:00:00",
+                "end": "2019-08-24T02:30:00",
+                "text": "Scouteske avond"
+            },
+            {
+                "start": "2019-08-24T02:30:00",
+                "end": null,
+                "text": "Slaapwel"
+            }
+        ]
+    },
+    {
+        "label": "Zaterdag",
+        "items": [
+            {
+                "start": "2019-08-24T08:00:00",
+                "end": "2019-08-24T09:00:00",
+                "text": "Opstaan en ontbijten"
+            },
+            {
+                "start": "2019-08-24T09:00:00",
+                "end": "2019-08-24T10:00:00",
+                "text": "Districtsmoment"
+            },
+            {
+                "start": "2019-08-24T10:30:00",
+                "end": "2019-08-24T12:30:00",
+                "text": "Markt"
+            },
+            {
+                "start": "2019-08-24T11:30:00",
+                "end": "2019-08-24T12:00:00",
+                "text": "VIP-receptie"
+            },
+            {
+                "start": "2019-08-24T12:00:00",
+                "end": "2019-08-24T13:00:00",
+                "text": "Massapicknick"
+            },
+            {
+                "start": "2019-08-24T12:50:00",
+                "end": "2019-08-24T13:00:00",
+                "text": "Jaarlieddans"
+            },
+            {
+                "start": "2019-08-24T13:00:00",
+                "end": "2019-08-24T13:10:00",
+                "text": "Speech VC"
+            },
+            {
+                "start": "2019-08-24T13:10:00",
+                "end": "2019-08-24T13:30:00",
+                "text": "Show"
+            },
+            {
+                "start": "2019-08-24T13:50:00",
+                "end": "2019-08-24T15:40:00",
+                "text": "Tak- en themamoment"
+            },
+            {
+                "start": "2019-08-24T15:50:00",
+                "end": "2019-08-24T16:10:00",
+                "text": "Zin in HO"
+            },
+            {
+                "start": "2019-08-24T16:30:00",
+                "end": "2019-08-24T18:20:00",
+                "text": "Tak- en themamoment"
+            },
+            {
+                "start": "2019-08-24T18:40:00",
+                "end": "2019-08-24T20:00:00",
+                "text": "Avondeten"
+            },
+            {
+                "start": "2019-08-24T20:00:00",
+                "end": "2019-08-24T22:30:00",
+                "text": "Jaarthemamoment op de gouwgrond"
+            },
+            {
+                "start": "2019-08-24T22:45:00",
+                "end": "2019-08-24T23:00:00",
+                "text": "Engergizer"
+            },
+            {
+                "start": "2019-08-24T23:00:00",
+                "end": "2019-08-25T02:30:00",
+                "text": "Avondprogramma"
+            }
+        ]
+    },
+    {
+        "label": "Zondag",
+        "items": [
+            {
+                "start": "2019-08-25T08:00:00",
+                "end": "2019-08-25T09:00:00",
+                "text": "Opstaan en ontbijten"
+            },
+            {
+                "start": "2019-08-25T09:00:00",
+                "end": "2019-08-25T11:00:00",
+                "text": "Opruim HO"
+            },
+            {
+                "start": "2019-08-25T11:00:00",
+                "end": "2019-08-25T11:15:00",
+                "text": "Jaarlieddans"
+            },
+            {
+                "start": "2019-08-25T11:15:00",
+                "end": "2019-08-25T12:15:00",
+                "text": "GOE Spel"
+            },
+            {
+                "start": "2019-08-25T12:15:00",
+                "end": "2019-08-25T12:30:00",
+                "text": "Speech VV"
+            },
+            {
+                "start": "2019-08-25T12:30:00",
+                "end": "2019-08-25T13:00:00",
+                "text": "Middageten"
+            },
+            {
+                "start": "2019-08-25T13:00:00",
+                "end": null,
+                "text": "Einde HO voor deelnemers"
+            }
+        ]
+    }
+]

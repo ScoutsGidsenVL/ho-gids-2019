@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
+import { CalendarResolverService } from './calendar/calendar-resolver.service';
 import { CalendarComponent } from './calendar/calendar.component';
 import { HomeComponent } from './home/home.component';
 import { InfoComponent } from './info/info.component';
@@ -11,7 +13,12 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'info', component: InfoComponent },
   { path: 'map', component: MapComponent },
-  { path: 'calendar', component: CalendarComponent },
+  {
+    path: 'calendar', component: CalendarComponent,
+    resolve: {
+      service: CalendarResolverService
+    }
+  },
   { path: '**', component: PageNotFoundComponent }
 ];
 
