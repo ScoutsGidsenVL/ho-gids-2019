@@ -15,6 +15,7 @@ import { MaterialModule } from './core/material.module';
 import { HomeComponent } from './home/home.component';
 import { InfoComponent } from './info/info.component';
 import { MapComponent } from './map/map.component';
+import { MapService } from './map/map.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
@@ -37,7 +38,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   providers: [
     CalendarService,
-    CalendarResolverService
+    CalendarResolverService,
+    MapService
   ],
   bootstrap: [AppComponent]
 })
