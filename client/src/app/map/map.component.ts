@@ -13,7 +13,7 @@ export class MapComponent implements OnInit, OnDestroy {
 
   public options = {
     layers: [
-      tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
+      tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
     ],
     zoom: 13.4,
     center: latLng(51.240683, 4.931039)
