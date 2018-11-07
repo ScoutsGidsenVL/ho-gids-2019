@@ -1,51 +1,58 @@
-import { Component, OnInit } from '@angular/core';
-import * as mapboxgl from 'mapbox-gl';
-import { MapService } from './map.service';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { circle, latLng, tileLayer, Circle, LatLng, Layer } from 'leaflet';
 
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.scss']
 })
-export class MapComponent implements OnInit {
+export class MapComponent implements OnInit, OnDestroy {
 
-  /// default settings
-  private map: mapboxgl.Map;
-  private style = 'mapbox://styles/crejer/cjkgplqv71sg32roypxm25vei';
-  private lng = 4.931039;
-  private lat = 51.240683;
-  private zoom = 13.4;
+  constructor() {
+  }
 
-  constructor(mapService: MapService) {
+  public options = {
+    layers: [
+      tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
+    ],
+    zoom: 13.4,
+    center: latLng(51.240683, 4.931039)
+  };
 
+  public center: LatLng;
+  public locationLayer: Circle;
+
+  private locationWatch: number;
+
+  ngOnDestroy(): void {
+    if (this.locationWatch) {
+      navigator.geolocation.clearWatch(this.locationWatch);
+    }
   }
 
   ngOnInit() {
-    this.initializeMap();
-  }
-
-  private initializeMap() {
-    /// locate the user
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
-        this.lat = position.coords.latitude;
-        this.lng = position.coords.longitude;
-        /*this.map.flyTo({
-          center: [this.lng, this.lat],
-        });*/
+        this.center = latLng(position.coords.latitude, position.coords.longitude);
       });
+
+      const that = this;
+      this.locationWatch = navigator.geolocation.watchPosition((position) => {
+        const cords = latLng(position.coords.latitude, position.coords.longitude);
+        if (that.locationLayer) {
+          const oldCords = that.locationLayer.getLatLng();
+          const radius = that.locationLayer.getRadius();
+          if (oldCords.lat === cords.lat && oldCords.lng === cords.lng && radius === position.coords.accuracy) {
+            return;
+          }
+        }
+        that.locationLayer = circle(cords, { radius: position.coords.accuracy });
+      }, (err) => {
+        that.locationLayer = null;
+      }, {
+          enableHighAccuracy: true,
+          maximumAge: 1000 * 10
+        });
     }
-
-    this.buildMap();
-
-  }
-
-  buildMap() {
-    this.map = new mapboxgl.Map({
-      container: 'map',
-      style: this.style,
-      zoom: this.zoom,
-      center: [this.lng, this.lat]
-    });
   }
 }

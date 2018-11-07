@@ -1,6 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -15,7 +16,6 @@ import { MaterialModule } from './core/material.module';
 import { HomeComponent } from './home/home.component';
 import { InfoComponent } from './info/info.component';
 import { MapComponent } from './map/map.component';
-import { MapService } from './map/map.service';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
@@ -34,12 +34,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
+    LeafletModule.forRoot(),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     CalendarService,
-    CalendarResolverService,
-    MapService
+    CalendarResolverService
   ],
   bootstrap: [AppComponent]
 })

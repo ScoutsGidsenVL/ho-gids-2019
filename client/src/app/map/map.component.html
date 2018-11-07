@@ -1,2 +1,7 @@
 <div class="map"
-     id="map"></div>
+     leaflet
+     [leafletOptions]="options"
+     [(leafletCenter)]="center">
+    <div *ngIf="locationLayer"
+         [leafletLayer]="locationLayer"></div>
+</div>
