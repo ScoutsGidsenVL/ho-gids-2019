@@ -1,0 +1,23 @@
+mat-panel-title {
+    width: 100px;
+}
+mat-panel-description {
+    flex-basis: 100%;
+}
+
+mat-expansion-panel{
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-left: 10px solid transparent;
+}
+.active {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: 10px solid green;
+}
+
+.passed {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-left: 10px solid gray;
+}

@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
+
 import { CalendarDay, CalendarService } from './calendar.service';
 
 @Component({
@@ -7,15 +8,15 @@ import { CalendarDay, CalendarService } from './calendar.service';
   templateUrl: './calendar.component.html',
   styleUrls: ['./calendar.component.scss']
 })
-export class CalendarComponent implements OnInit {
-
+export class CalendarComponent {
   public calendar$: Observable<CalendarDay[]>;
 
   constructor(calendarService: CalendarService) {
     this.calendar$ = calendarService.calendar$;
   }
 
-  ngOnInit() {
+  public getCurrentDay(calendar: CalendarDay[]): number {
+    return calendar && calendar.findIndex(y => y.active);
   }
 
 }

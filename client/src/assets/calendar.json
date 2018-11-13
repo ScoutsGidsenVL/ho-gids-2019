@@ -4,28 +4,43 @@
         "items": [
             {
                 "start": "2019-08-23T19:00:00",
-                "end": null,
-                "text": "Aankomst"
+                "end": "2019-08-23T20:00:00",
+                "title": "Aankomst",
+                "description": "",
+                "showStart": true,
+                "showEnd": false
             },
             {
                 "start": "2019-08-23T20:00:00",
                 "end": "2019-08-23T22:45:00",
-                "text": "Onthaal en instapacitiviteit op de gouwgrond"
+                "title": "Onthaal en instapacitiviteit op de gouwgrond",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-23T23:15:00",
                 "end": "2019-08-24T00:00:00",
-                "text": "Opening met jaarlied en jaardans"
+                "title": "Opening met jaarlied en jaardans",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-24T00:00:00",
                 "end": "2019-08-24T02:30:00",
-                "text": "Scouteske avond"
+                "title": "Scouteske avond",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-24T02:30:00",
-                "end": null,
-                "text": "Slaapwel"
+                "end": "2019-08-24T04:00:00",
+                "title": "Slaapwel",
+                "description": "",
+                "showStart": true,
+                "showEnd": false
             }
         ]
     },
@@ -35,77 +50,130 @@
             {
                 "start": "2019-08-24T08:00:00",
                 "end": "2019-08-24T09:00:00",
-                "text": "Opstaan en ontbijten"
+                "title": "Opstaan en ontbijten",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-24T09:00:00",
                 "end": "2019-08-24T10:00:00",
-                "text": "Districtsmoment"
+                "title": "Districtsmoment",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-24T10:30:00",
                 "end": "2019-08-24T12:30:00",
-                "text": "Markt"
+                "title": "Markt",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-24T11:30:00",
                 "end": "2019-08-24T12:00:00",
-                "text": "VIP-receptie"
+                "title": "VIP-receptie",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-24T12:00:00",
                 "end": "2019-08-24T13:00:00",
-                "text": "Massapicknick"
+                "title": "Massapicknick",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-24T12:50:00",
                 "end": "2019-08-24T13:00:00",
-                "text": "Jaarlieddans"
+                "title": "Jaarlieddans",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-24T13:00:00",
                 "end": "2019-08-24T13:10:00",
-                "text": "Speech VC"
+                "title": "Speech VC",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-24T13:10:00",
                 "end": "2019-08-24T13:30:00",
-                "text": "Show"
+                "title": "Show",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-24T13:50:00",
                 "end": "2019-08-24T15:40:00",
-                "text": "Tak- en themamoment"
+                "title": "Tak- en themamoment",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-24T15:50:00",
                 "end": "2019-08-24T16:10:00",
-                "text": "Zin in HO"
+                "title": "Zin in HO",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-24T16:30:00",
                 "end": "2019-08-24T18:20:00",
-                "text": "Tak- en themamoment"
+                "title": "Tak- en themamoment",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-24T18:40:00",
                 "end": "2019-08-24T20:00:00",
-                "text": "Avondeten"
+                "title": "Avondeten",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-24T20:00:00",
                 "end": "2019-08-24T22:30:00",
-                "text": "Jaarthemamoment op de gouwgrond"
+                "title": "Jaarthemamoment op de gouwgrond",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-24T22:45:00",
                 "end": "2019-08-24T23:00:00",
-                "text": "Engergizer"
+                "title": "Engergizer",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-24T23:00:00",
                 "end": "2019-08-25T02:30:00",
-                "text": "Avondprogramma"
+                "title": "Avondprogramma",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
+            },
+            {
+                "start": "2019-08-25T02:30:00",
+                "end": "2019-08-25T04:00:00",
+                "title": "Slaapwel",
+                "description": "",
+                "showStart": true,
+                "showEnd": false
             }
         ]
     },
@@ -115,37 +183,58 @@
             {
                 "start": "2019-08-25T08:00:00",
                 "end": "2019-08-25T09:00:00",
-                "text": "Opstaan en ontbijten"
+                "title": "Opstaan en ontbijten",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-25T09:00:00",
                 "end": "2019-08-25T11:00:00",
-                "text": "Opruim HO"
+                "title": "Opruim HO",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-25T11:00:00",
                 "end": "2019-08-25T11:15:00",
-                "text": "Jaarlieddans"
+                "title": "Jaarlieddans",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-25T11:15:00",
                 "end": "2019-08-25T12:15:00",
-                "text": "GOE Spel"
+                "title": "GOE Spel",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-25T12:15:00",
                 "end": "2019-08-25T12:30:00",
-                "text": "Speech VV"
+                "title": "Speech VV",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-25T12:30:00",
                 "end": "2019-08-25T13:00:00",
-                "text": "Middageten"
+                "title": "Middageten",
+                "description": "",
+                "showStart": true,
+                "showEnd": true
             },
             {
                 "start": "2019-08-25T13:00:00",
-                "end": null,
-                "text": "Einde HO voor deelnemers"
+                "end": "2019-08-25T20:00:00",
+                "title": "Einde HO voor deelnemers",
+                "description": "",
+                "showStart": true,
+                "showEnd": false
             }
         ]
     }

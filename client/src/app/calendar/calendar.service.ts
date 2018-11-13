@@ -1,29 +1,51 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { combineLatest, timer, BehaviorSubject } from 'rxjs';
 
 export interface CalendarDay {
   label: string;
   items: CalendarItem[];
+  active: boolean;
 }
 
 export interface CalendarItem {
-  text: string;
+  title: string;
+  description: string;
   start: Date;
   end: Date;
+  showStart: boolean;
+  showEnd: boolean;
+  active: boolean;
+  passed: boolean;
 }
 
 @Injectable({
   providedIn: 'root'
 })
 export class CalendarService {
-
   private calendarSubject$: BehaviorSubject<CalendarDay[]> = new BehaviorSubject<CalendarDay[]>(null);
-  public calendar$ = this.calendarSubject$.asObservable();
+  private calendarWithActiveSubject$: BehaviorSubject<CalendarDay[]> = new BehaviorSubject<CalendarDay[]>(null);
+  public calendar$ = this.calendarWithActiveSubject$.asObservable();
 
   constructor(private http: HttpClient) {
     this.update();
+    combineLatest(this.calendarSubject$, timer(0, 10000), (calendar, _) => {
+      if (!calendar) {
+        return calendar;
+      }
+
+      const current = new Date();
+      calendar.forEach(day => {
+        day.items.forEach(item => {
+          item.active = item.start <= current && current < item.end;
+          item.passed = current >= item.end;
+          if (item.active) {
+            day.active = true;
+          }
+        });
+      });
+      return calendar;
+    }).subscribe(x => this.calendarWithActiveSubject$.next(x));
   }
 
   public update() {

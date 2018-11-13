@@ -1,8 +1,14 @@
-<mat-card>
-  <mat-card-title>
-    <span *ngIf="item.start">{{item.start | date:'Humm' }}</span>
-    <span *ngIf="item.start && item.end">-</span>
-    <span *ngIf="item.end">{{item.end | date:'Humm'}}</span>
-  </mat-card-title>
-  <mat-card-content>{{item.text}}</mat-card-content>
-</mat-card>
+<mat-expansion-panel [ngClass]="{'active': item.active, 'passed': item.passed}"
+                     [expanded]="item.active">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      <span *ngIf="item.showStart">{{item.start | date:'Humm' }}</span>
+      <span *ngIf="item.showStart && item.showEnd">-</span>
+      <span *ngIf="item.showEnd">{{item.end | date:'Humm'}}</span>
+    </mat-panel-title>
+    <mat-panel-description>
+      {{item.title}}
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <p>{{item.description}}</p>
+</mat-expansion-panel>
