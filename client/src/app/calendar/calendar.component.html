@@ -1,12 +1,15 @@
-<mat-tab-group *ngIf="calendar$ | async; let calendar"
-               mat-align-tabs="center"
-               [selectedIndex]="getCurrentDay(calendar)">
-  <mat-tab *ngFor="let day of calendar"
-           [label]="day.label">
-    <mat-accordion [multi]="true">
-      <app-calendar-item *ngFor="let item of day.items"
-                         [item]="item">
-      </app-calendar-item>
-    </mat-accordion>
-  </mat-tab>
-</mat-tab-group>
+<div class="calendar"
+     (swipeleft)="onSwipeLeft($event)"
+     (swiperight)="onSwipeRight($event)">
+  <mat-tab-group mat-align-tabs="center"
+                 [selectedIndex]="selectedIndex">
+    <mat-tab *ngFor="let day of calendar"
+             [label]="day.label">
+      <mat-accordion [multi]="true">
+        <app-calendar-item *ngFor="let item of day.items"
+                           [item]="item">
+        </app-calendar-item>
+      </mat-accordion>
+    </mat-tab>
+  </mat-tab-group>
+</div>

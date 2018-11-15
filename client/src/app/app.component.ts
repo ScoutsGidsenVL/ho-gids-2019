@@ -1,5 +1,7 @@
 import { MediaMatcher } from '@angular/cdk/layout';
-import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
+import { ChangeDetectorRef, Component, OnDestroy, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material';
+import { SwipeHelper } from './core/swipe.helper';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +9,7 @@ import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnDestroy {
+  @ViewChild('sidenav') sidenav: MatSidenav;
   mobileQuery: MediaQueryList;
   private _mobileQueryListener: () => void;
 
@@ -18,5 +21,15 @@ export class AppComponent implements OnDestroy {
 
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
+  }
+
+  public onSwipeLeft(event) {
+    this.sidenav.close();
+  }
+
+  public onSwipeRight(event) {
+    if (SwipeHelper.IsFromLeftBorder(event)) {
+      this.sidenav.open();
+    }
   }
 }

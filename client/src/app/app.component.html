@@ -1,10 +1,12 @@
 <div class="container"
-     [class.is-mobile]="mobileQuery.matches">
+     [class.is-mobile]="mobileQuery.matches"
+     (swipeleft)="onSwipeLeft($event)"
+     (swiperight)="onSwipeRight($event)">
   <mat-toolbar color="primary"
                class="toolbar">
     <button mat-icon-button
             aria-label="menu"
-            (click)="snav.toggle()">
+            (click)="sidenav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
     <h1 class="app-name">HO Gids</h1>
@@ -12,29 +14,29 @@
 
   <mat-sidenav-container class="sidenav-container"
                          [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-    <mat-sidenav #snav
+    <mat-sidenav #sidenav
                  [mode]="mobileQuery.matches ? 'over' : 'side'"
                  [fixedInViewport]="mobileQuery.matches"
                  fixedTopGap="56">
       <mat-nav-list>
         <a mat-list-item
            routerLink="/home"
-           (click)="snav.close()">
+           (click)="sidenav.close()">
           <mat-icon>home</mat-icon> Home
         </a>
         <a mat-list-item
            routerLink="/calendar"
-           (click)="snav.close()">
+           (click)="sidenav.close()">
           <mat-icon>calendar_today</mat-icon> Agenda
         </a>
         <a mat-list-item
            routerLink="/map"
-           (click)="snav.close()">
+           (click)="sidenav.close()">
           <mat-icon>map</mat-icon> Kaart
         </a>
         <a mat-list-item
            routerLink="/info"
-           (click)="snav.close()">
+           (click)="sidenav.close()">
           <mat-icon>info</mat-icon> Info
         </a>
 
