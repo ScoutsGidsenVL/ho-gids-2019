@@ -33,3 +33,12 @@ h1.app-name {
 mat-nav-list a mat-icon {
   margin-right: 1rem;
 } 
+
+.map-label {
+	font-size: 9px;
+	color: white;
+	text-shadow:1px 1px #000000;
+	width: 65px  !important;
+	margin-left: -32.5px !important;
+	text-align: center;
+}
