@@ -1,5 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { circle, latLng, tileLayer, Circle, LatLng, Layer } from 'leaflet';
+import { circle, latLng, tileLayer, Circle, LatLng } from 'leaflet';
+
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
+import { MapService } from './map.service';
 
 @Component({
   selector: 'app-map',
@@ -7,8 +11,12 @@ import { circle, latLng, tileLayer, Circle, LatLng, Layer } from 'leaflet';
   styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements OnInit, OnDestroy {
+  public onDestroy$ = new Subject();
 
-  constructor() {
+  constructor(mapService: MapService) {
+    mapService.geoJson$.pipe(takeUntil(this.onDestroy$)).subscribe(geoJson => {
+      this.geoJsonLayer = geoJson;
+    });
   }
 
   public options = {
@@ -21,6 +29,7 @@ export class MapComponent implements OnInit, OnDestroy {
 
   public center: LatLng;
   public locationLayer: Circle;
+  public geoJsonLayer: Circle;
 
   private locationWatch: number;
 
@@ -28,6 +37,8 @@ export class MapComponent implements OnInit, OnDestroy {
     if (this.locationWatch) {
       navigator.geolocation.clearWatch(this.locationWatch);
     }
+    this.onDestroy$.next();
+    this.onDestroy$.complete();
   }
 
   ngOnInit() {
