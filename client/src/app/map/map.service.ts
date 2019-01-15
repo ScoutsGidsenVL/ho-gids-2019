@@ -26,39 +26,39 @@ export class MapService {
       const styles = {
         'podium': {
           fillColor: '#f07d00',
-          fillOpacity: 1,
+          fillOpacity: 0.5,
           stroke: false
         },
         'podiumgrond': {
           fillColor: '#006f93',
-          fillOpacity: 1,
+          fillOpacity: 0.5,
           stroke: false
         },
         'pavilioen': {
           fillColor: '#e2afc4',
-          fillOpacity: 1,
+          fillOpacity: 0.5,
           stroke: false
         },
         'loods': {
           fillColor: '#dae283',
-          fillOpacity: 1,
+          fillOpacity: 0.5,
           stroke: false
         },
         'kampeergrond': {
           fillColor: '#51af31',
-          fillOpacity: 1,
+          fillOpacity: 0.5,
           stroke: false,
           lineJoin: 'round'
         },
         'kampeergrond-ongebruikt': {
           fillColor: '#fdf7f4',
-          fillOpacity: 1,
+          fillOpacity: 0.5,
           stroke: false,
           lineJoin: 'round'
         },
         'aanbod': {
           fillColor: '#da0c25',
-          fillOpacity: 1,
+          fillOpacity: 0.5,
           stroke: false,
           lineJoin: 'round'
         },
@@ -70,7 +70,7 @@ export class MapService {
         },
         'bos': {
           fillColor: '#7e216e',
-          fillOpacity: 1,
+          fillOpacity: 0.5,
           weight: 1,
           color: '37af6b'
         },
@@ -102,13 +102,13 @@ export class MapService {
           stroke: false,
           radius: 4,
           fillColor: '#0e7594',
-          fillOpacity: 1
+          fillOpacity: 0.5
         },
         'border': {
           fillColor: '#fcefe9',
           weight: 5,
           color: '#f0a68f',
-          fillOpacity: 1,
+          fillOpacity: 0.5,
           opacity: 1
         },
         'default': {
