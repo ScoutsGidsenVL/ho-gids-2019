@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { CalendarResolverService } from './calendar/calendar-resolver.service';
 import { CalendarComponent } from './calendar/calendar.component';
+import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { InfoComponent } from './info/info.component';
 import { MapComponent } from './map/map.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
       service: CalendarResolverService
     }
   },
+  { path: 'contact', component: ContactComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
