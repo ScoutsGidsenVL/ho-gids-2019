@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "be.scoutsengidsenvlaanderen.ho.gids",
+      "sha256_cert_fingerprints": [
+        "AE:DD:F2:AE:C8:77:D4:35:A7:DD:25:60:BE:EA:1D:FA:FF:16:2E:EF:CA:01:37:E3:DE:8A:AA:1A:1E:2E:45:D7"
+      ]
+    }
+  }
+]
