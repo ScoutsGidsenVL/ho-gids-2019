@@ -30,7 +30,7 @@ android {
                 // handle Intents to open https://ho-gids.azurewebsites.net.
                 hostName: "ho-gids.azurewebsites.net",
                 defaultUrl: "https://ho-gids.azurewebsites.net",
-                launcherName: "HO Gids TWA",
+                launcherName: "HO Gids",
                 // This variable below expresses the relationship between the app and the site,
                 // as documented in the TWA documentation at
                 // https://developers.google.com/web/updates/2017/10/using-twa#set_up_digital_asset_links_in_an_android_app

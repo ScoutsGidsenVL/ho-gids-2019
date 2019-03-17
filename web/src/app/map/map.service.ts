@@ -168,7 +168,7 @@ export class MapService {
         }),
         'tent': icon({
           iconUrl: 'assets/kaart/tent.png',
-          iconSize: [128, 64],
+          iconSize: [64, 32],
           className: iconRectClassName
         }),
         'locationIcon': icon({
