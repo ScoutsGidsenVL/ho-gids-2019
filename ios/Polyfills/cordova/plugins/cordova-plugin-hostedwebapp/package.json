@@ -1,0 +1,56 @@
+{
+  "_from": "git+https://github.com/manifoldjs/ManifoldCordova.git#v0.3.2-development",
+  "_id": "cordova-plugin-hostedwebapp@0.3.2",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-hostedwebapp",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/manifoldjs/ManifoldCordova#v0.3.2-development",
+    "rawSpec": "https://github.com/manifoldjs/ManifoldCordova#v0.3.2-development",
+    "saveSpec": "git+https://github.com/manifoldjs/ManifoldCordova.git#v0.3.2-development",
+    "fetchSpec": "https://github.com/manifoldjs/ManifoldCordova.git",
+    "gitCommittish": "v0.3.2-development"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/manifoldjs/ManifoldCordova.git#4f9acb03d73c1ef33f69a19a60bf263ec2b9c1c0",
+  "_spec": "https://github.com/manifoldjs/ManifoldCordova#v0.3.2-development",
+  "_where": "/tmp/f13a21fe-ios/HOgids/Polyfills/cordova",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/manifoldjs/ManifoldCordova/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-hostedwebapp",
+    "platforms": [
+      "android",
+      "windows",
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Hosted Web App Plugin",
+  "homepage": "https://github.com/manifoldjs/ManifoldCordova",
+  "keywords": [
+    "cordova",
+    "manifest",
+    "hosted",
+    "web",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-windows",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-hostedwebapp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manifoldjs/ManifoldCordova.git"
+  },
+  "version": "0.3.2"
+}

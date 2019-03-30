@@ -4,3 +4,4 @@
 - Niet gebruikte lokaken verbergen op kaart (labels)
 - Grondgebieden opsplitsen
 - Niewe kaart hoge rielen
+- Kalender sub items tijdens vormingen

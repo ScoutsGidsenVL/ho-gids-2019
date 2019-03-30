@@ -1,0 +1,18 @@
+{
+  "cordova-plugin-hostedwebapp": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/manifoldjs/ManifoldCordova#v0.3.2-development"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}
