@@ -19,6 +19,7 @@ import { EmergencyInfoComponent } from './info/emergency-info/emergency-info.com
 import { InfoComponent } from './info/info.component';
 import { MapComponent } from './map/map.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PloegItModule } from './ploeg-it/ploeg-it.module';
 
 @NgModule({
   declarations: [
@@ -34,12 +35,13 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
     LeafletModule.forRoot(),
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    PloegItModule,
+    AppRoutingModule
   ],
   providers: [
     CalendarService,
