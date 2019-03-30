@@ -1,6 +1,6 @@
 {
-  "name": "HO Gids",
-  "short_name": "HOGids",
+  "name": "HO-gids",
+  "short_name": "HO-gids",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",

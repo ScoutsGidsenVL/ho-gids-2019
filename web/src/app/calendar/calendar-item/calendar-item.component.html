@@ -1,4 +1,5 @@
 <mat-expansion-panel [ngClass]="{'active': item.active, 'passed': item.passed}"
+                     [hideToggle]="!item.description"
                      [expanded]="item.active">
   <mat-expansion-panel-header>
     <mat-panel-title>
