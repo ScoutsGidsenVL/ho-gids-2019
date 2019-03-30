@@ -20,6 +20,7 @@
                  [fixedInViewport]="mobileQuery.matches"
                  fixedTopGap="56">
       <mat-nav-list>
+        <h3 mat-subheader>HO-gids</h3>
         <a mat-list-item
            routerLink="/home"
            (click)="sidenav.close()">
@@ -46,6 +47,14 @@
           <mat-icon>contact_support</mat-icon> Contact
         </a>
 
+        <mat-divider></mat-divider>
+
+        <h3 mat-subheader>Extra's</h3>
+        <a mat-list-item
+           routerLink="/ploeg-it"
+           (click)="sidenav.close()">
+          <mat-icon>videogame_asset</mat-icon> Geocache spel
+        </a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>

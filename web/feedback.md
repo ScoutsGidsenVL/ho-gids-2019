@@ -1,0 +1,6 @@
+- Als er geen teksts is niet openklakbaar maken calendar
+- Kaart en kalender met elkaar linken
+- De goorkens hoge rielen markeren zie kaart
+- Niet gebruikte lokaken verbergen op kaart (labels)
+- Grondgebieden opsplitsen
+- Niewe kaart hoge rielen
