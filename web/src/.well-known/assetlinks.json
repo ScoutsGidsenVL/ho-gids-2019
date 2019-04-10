@@ -7,7 +7,8 @@
       "namespace": "android_app",
       "package_name": "be.scoutsengidsenvlaanderen.ho.gids",
       "sha256_cert_fingerprints": [
-        "AE:DD:F2:AE:C8:77:D4:35:A7:DD:25:60:BE:EA:1D:FA:FF:16:2E:EF:CA:01:37:E3:DE:8A:AA:1A:1E:2E:45:D7"
+        "AE:DD:F2:AE:C8:77:D4:35:A7:DD:25:60:BE:EA:1D:FA:FF:16:2E:EF:CA:01:37:E3:DE:8A:AA:1A:1E:2E:45:D7",
+        "3D:16:A7:27:19:AC:3D:B0:07:51:7C:06:E2:61:D4:95:A7:27:42:8E:C8:C3:8E:55:7B:3E:36:08:D3:93:8D:4F"
       ]
     }
   }
