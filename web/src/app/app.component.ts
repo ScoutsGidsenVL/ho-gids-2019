@@ -12,7 +12,7 @@ import { SwipeHelper } from './core/swipe.helper';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnDestroy {
-  @ViewChild('sidenav') sidenav: MatSidenav;
+  @ViewChild('sidenav', { static: true }) sidenav: MatSidenav;
   mobileQuery: MediaQueryList;
   private _mobileQueryListener: () => void;
 
