@@ -55,6 +55,17 @@
            (click)="sidenav.close()">
           <mat-icon>videogame_asset</mat-icon> Geocache spel
         </a>
+        <ng-container *ngIf="serviceWorkerEnabled">
+          <a mat-list-item
+             (click)="checkForUpdate()">
+            <mat-icon>update</mat-icon> Check for updates
+          </a>
+          <a *ngIf="updateAvailable"
+             mat-list-item
+             (click)="activateUpdate()">
+            <mat-icon>system_update</mat-icon> Activeer update
+          </a>
+        </ng-container>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>

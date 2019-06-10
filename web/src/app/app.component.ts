@@ -1,8 +1,10 @@
 import { MediaMatcher } from '@angular/cdk/layout';
-import { ChangeDetectorRef, Component, OnDestroy, ViewChild } from '@angular/core';
-import { MatSidenav } from '@angular/material';
+import { ApplicationRef, ChangeDetectorRef, Component, OnDestroy, ViewChild } from '@angular/core';
+import { MatSidenav, MatSnackBar } from '@angular/material';
 import { NavigationEnd, Router } from '@angular/router';
-import { distinctUntilChanged } from 'rxjs/operators';
+import { SwUpdate } from '@angular/service-worker';
+import { concat, interval, Subject } from 'rxjs';
+import { distinctUntilChanged, first, takeUntil } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 import { SwipeHelper } from './core/swipe.helper';
 
@@ -15,10 +17,17 @@ export class AppComponent implements OnDestroy {
   @ViewChild('sidenav', { static: true }) sidenav: MatSidenav;
   mobileQuery: MediaQueryList;
   private _mobileQueryListener: () => void;
+  private onDestroy$ = new Subject();
+
+  public updateAvailable = false;
+  public serviceWorkerEnabled = true;
 
   constructor(changeDetectorRef: ChangeDetectorRef,
     media: MediaMatcher,
-    router: Router) {
+    router: Router,
+    appRef: ApplicationRef,
+    private swUpdate: SwUpdate,
+    private snackBar: MatSnackBar) {
     this.mobileQuery = media.matchMedia('(max-width: 600px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
@@ -36,10 +45,34 @@ export class AppComponent implements OnDestroy {
       gtag('config', environment.analyticsId, { 'page_path': x.url });
     });
 
+    this.serviceWorkerEnabled = this.swUpdate.isEnabled;
+    if (this.serviceWorkerEnabled) {
+      // Allow the app to stabilize first, before starting polling for updates with `interval()`.
+      const appIsStable$ = appRef.isStable.pipe(first(isStable => isStable === true));
+      const everySixHours$ = interval(6 * 60 * 60 * 1000);
+      const everySixHoursOnceAppIsStable$ = concat(appIsStable$, everySixHours$);
+
+      everySixHoursOnceAppIsStable$.subscribe(() => this.checkForUpdate());
+
+      this.swUpdate.available
+        .pipe(takeUntil(this.onDestroy$))
+        .subscribe(event => {
+          this.updateAvailable = true;
+          const snackBarRef = this.snackBar.open('Er is een update beschikbaar!', 'Update', {
+            duration: 30000,
+          });
+
+          snackBarRef.onAction().subscribe(() => {
+            this.activateUpdate();
+          });
+        });
+    }
   }
 
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
+    this.onDestroy$.next();
+    this.onDestroy$.complete();
   }
 
   public onSwipeLeft(event) {
@@ -50,5 +83,13 @@ export class AppComponent implements OnDestroy {
     if (SwipeHelper.IsFromLeftBorder(event)) {
       this.sidenav.open();
     }
+  }
+
+  public async checkForUpdate() {
+    await this.swUpdate.checkForUpdate();
+  }
+
+  public async activateUpdate() {
+    await this.swUpdate.activateUpdate().then(() => document.location.reload());
   }
 }

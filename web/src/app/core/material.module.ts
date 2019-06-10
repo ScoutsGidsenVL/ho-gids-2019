@@ -6,6 +6,7 @@ import {
     MatIconModule,
     MatListModule,
     MatSidenavModule,
+    MatSnackBarModule,
     MatTableModule,
     MatTabsModule,
     MatToolbarModule,
@@ -21,7 +22,8 @@ import {
         MatSidenavModule,
         MatTabsModule,
         MatToolbarModule,
-        MatTableModule
+        MatTableModule,
+        MatSnackBarModule
     ]
 })
 export class MaterialModule { }
