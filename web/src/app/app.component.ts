@@ -87,6 +87,7 @@ export class AppComponent implements OnDestroy {
 
   public async checkForUpdate() {
     await this.swUpdate.checkForUpdate();
+    this.sidenav.close();
   }
 
   public async activateUpdate() {

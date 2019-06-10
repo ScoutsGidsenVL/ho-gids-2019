@@ -56,7 +56,8 @@
           <mat-icon>videogame_asset</mat-icon> Geocache spel
         </a>
         <ng-container *ngIf="serviceWorkerEnabled">
-          <a mat-list-item
+          <a *ngIf="!updateAvailable"
+             mat-list-item
              (click)="checkForUpdate()">
             <mat-icon>update</mat-icon> Check voor updates
           </a>
