@@ -4,7 +4,8 @@ mat-card {
 
 .banner-it {
     max-height: 300px;
-    max-width: 400px;
+    max-width: 100%;
     display: block;
     margin: auto auto 10px auto;
+    object-fit: contain;
 }

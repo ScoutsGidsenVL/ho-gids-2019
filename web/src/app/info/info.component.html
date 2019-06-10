@@ -46,7 +46,8 @@
           <p><strong>Kapoenen <br></strong></p>
           <p>Kom op ontdekking en leer waar jij en je kapoenen goed in zijn! Nieuwe spelen, moeilijke kapoenen,
             verhalen
-            bedenken, spelen in elkaar boksen, omgaan met ouders,... dit en méér kan je vinden in het kapoenenaanbod!</p>
+            bedenken, spelen in elkaar boksen, omgaan met ouders,... dit en méér kan je vinden in het kapoenenaanbod!
+          </p>
           <p><strong>Welpen <br></strong></p>
           <p>Of je nu nieuw bent in de horde, al wat lessen van Baloe onder de knie hebt, of een ervaren Akela bent,
             doet
@@ -132,7 +133,7 @@
         </mat-card-header>
         <img class="rules"
              mat-card-image
-             src="/assets/2016_leefregels_samen.jpg"
+             src="/assets/pictures/2016_leefregels_samen.jpg"
              alt="Leefregels figuren">
         <mat-card-content>
           <mat-list>
@@ -168,6 +169,26 @@
             vandalisme, vechten, vuurwerk, ...)<br> <strong>Natraject</strong>: traject na HO van individu of groep
             onder
             begeleiding van groepsleiding, district, gouw en stafmedewerker.</p>
+          <mat-table [dataSource]="dataSource">
+
+            <ng-container matColumnDef="wat">
+              <mat-header-cell *matHeaderCellDef> Wat? </mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.wat}} </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="oke">
+              <mat-header-cell *matHeaderCellDef> Oké op HO? </mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.oke}} </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="sanctie">
+              <mat-header-cell *matHeaderCellDef> Sanctie? </mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.sanctie}} </mat-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+          </mat-table>
+
+
           <table width="767"
                  cellspacing="0"
                  cellpadding="0"
