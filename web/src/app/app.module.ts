@@ -6,6 +6,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 import { environment } from '../environments/environment';
+import { AnnualSongComponent } from './annual-song/annual-song.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CalendarItemComponent } from './calendar/calendar-item/calendar-item.component';
@@ -31,7 +32,8 @@ import { PloegItModule } from './ploeg-it/ploeg-it.module';
     CalendarComponent,
     CalendarItemComponent,
     ContactComponent,
-    EmergencyInfoComponent
+    EmergencyInfoComponent,
+    AnnualSongComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { AnnualSongComponent } from './annual-song/annual-song.component';
 import { CalendarResolverService } from './calendar/calendar-resolver.service';
 import { CalendarComponent } from './calendar/calendar.component';
 import { ContactComponent } from './contact/contact.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
       service: CalendarResolverService
     }
   },
+  { path: 'annual-song', component: AnnualSongComponent },
   { path: 'contact', component: ContactComponent },
   { path: '**', component: PageNotFoundComponent }
 ];

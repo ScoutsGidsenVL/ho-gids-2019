@@ -1,0 +1,22 @@
+@import "../../styles/variables.scss";
+
+mat-card {
+    margin: 10px;
+}
+
+.refrein {
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: normal;
+    font-style: italic;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+.hashtag {
+    color: $primary
+}
