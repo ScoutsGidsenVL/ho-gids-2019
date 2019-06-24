@@ -5,10 +5,10 @@
     ],
     "target": {
       "namespace": "android_app",
-      "package_name": "be.scoutsengidsenvlaanderen.ho.gids",
+      "package_name": "be.scoutsengidsenvlaanderen.hogids",
       "sha256_cert_fingerprints": [
-        "AE:DD:F2:AE:C8:77:D4:35:A7:DD:25:60:BE:EA:1D:FA:FF:16:2E:EF:CA:01:37:E3:DE:8A:AA:1A:1E:2E:45:D7",
-        "3D:16:A7:27:19:AC:3D:B0:07:51:7C:06:E2:61:D4:95:A7:27:42:8E:C8:C3:8E:55:7B:3E:36:08:D3:93:8D:4F"
+        "B5:74:C8:0B:91:59:52:D5:AD:C9:C3:B1:97:10:49:1A:95:2D:BE:AB:90:F5:24:75:50:DA:D2:08:17:48:04:EE",
+        "1B:5C:F1:0D:36:5C:B9:85:05:63:6F:4B:F8:E0:EF:18:81:1A:45:71:B3:81:46:83:21:11:2E:00:BD:B4:7A:80"
       ]
     }
   }
