@@ -5,7 +5,42 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$client-primary: mat-palette($mat-teal);
+
+$md-scoutmoedig: (
+    50 : #e0e4ed,
+    100 : #b3bcd2,
+    200 : #8090b4,
+    300 : #4d6496,
+    400 : #264280,
+    500 : #002169,
+    600 : #001d61,
+    700 : #001856,
+    800 : #00144c,
+    900 : #000b3b,
+    A100 : #717eff,
+    A200 : #3e50ff,
+    A400 : #0b22ff,
+    A700 : #0016f1,
+    contrast: (
+        50: $dark-primary-text,
+        100: $dark-primary-text,
+        200: $dark-primary-text,
+        300: $dark-primary-text,
+        400: $dark-primary-text,
+        500: $light-primary-text,
+        600: $light-primary-text,
+        700: $light-primary-text,
+        800: $light-primary-text,
+        900: $light-primary-text,
+        A100: $dark-primary-text,
+        A200: $light-primary-text,
+        A400: $light-primary-text,
+        A700: $light-primary-text,
+    )
+);
+
+
+$client-primary: mat-palette($md-scoutmoedig);
 $client-accent: mat-palette($mat-brown, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
