@@ -18,6 +18,9 @@ import { MaterialModule } from './core/material.module';
 import { HomeComponent } from './home/home.component';
 import { EmergencyInfoComponent } from './info/emergency-info/emergency-info.component';
 import { InfoComponent } from './info/info.component';
+import { LeefregelsComponent } from './info/leefregels/leefregels.component';
+import { PraktischComponent } from './info/praktisch/praktisch.component';
+import { TijdVoorInspiratieComponent } from './info/tijd-voor-inspiratie/tijd-voor-inspiratie.component';
 import { MapComponent } from './map/map.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PloegItModule } from './ploeg-it/ploeg-it.module';
@@ -33,7 +36,10 @@ import { PloegItModule } from './ploeg-it/ploeg-it.module';
     CalendarItemComponent,
     ContactComponent,
     EmergencyInfoComponent,
-    AnnualSongComponent
+    AnnualSongComponent,
+    PraktischComponent,
+    LeefregelsComponent,
+    TijdVoorInspiratieComponent
   ],
   imports: [
     BrowserModule,

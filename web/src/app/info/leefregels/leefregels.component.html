@@ -1,0 +1,65 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Leefregels</mat-card-title>
+    <mat-card-subtitle>Zeven vuistregels van Herfstontmoeting. Zo houden we het gezellig voor iedereen en
+      betaalbaar
+      voor de organisatie.</mat-card-subtitle>
+  </mat-card-header>
+  <img class="rules"
+       mat-card-image
+       src="/assets/pictures/2016_leefregels_samen.jpg"
+       alt="Leefregels figuren">
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item>Neem actief deel aan het programma</mat-list-item>
+      <mat-list-item>Drink alcohol met mate</mat-list-item>
+      <mat-list-item>Geen eigen drank meenemen naar HO</mat-list-item>
+      <mat-list-item>Geen drugs</mat-list-item>
+      <mat-list-item>Respecteer elkaars nachtrust (vanaf 22u.)</mat-list-item>
+      <mat-list-item>Heb respect voor elkaar</mat-list-item>
+      <mat-list-item>Rook enkel in de rookzones</mat-list-item>
+    </mat-list>
+    <p><strong>Opgelet</strong>: vuurwerk, bommetjes en
+      voetzoekers zijn verboden op Herfstontmoeting.</p>
+    <p>Door je in te schrijven voor herfstontmoeting, ga je akkoord met de leefregels. <br>Overtreed je de
+      leefregels?
+      Dan
+      zal er een sanctie en natraject volgen.</p>
+  </mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Sancties overtreden leefregels HO</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p><strong>Wat is…</strong></p>
+    <p><strong>Overlast</strong>: overtreden van leefregel ('s nachts luid roepen, dronken gedrag, agressie ...)
+      en
+      aanspreken betrokkene verandert niets aan de situatie<br> <strong>Overlast met schade</strong>: elk gedrag
+      dat
+      (al
+      dan niet moedwillig) schade toebrengt aan materialen en personen zowel persoonlijk als organisatie
+      (diefstal,
+      vandalisme, vechten, vuurwerk, ...)<br> <strong>Natraject</strong>: traject na HO van individu of groep
+      onder
+      begeleiding van groepsleiding, district, gouw en stafmedewerker.</p>
+    <mat-table [dataSource]="dataSource">
+
+      <ng-container matColumnDef="wat">
+        <mat-header-cell *matHeaderCellDef> Wat? </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.wat}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="oke">
+        <mat-header-cell *matHeaderCellDef> Oké op HO? </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.oke}} </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="sanctie">
+        <mat-header-cell *matHeaderCellDef> Sanctie? </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.sanctie}} </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  </mat-card-content>
+</mat-card>
