@@ -9,6 +9,10 @@ mat-expansion-panel{
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
     border-left: 10px solid transparent;
+    
+    p {
+        white-space: pre;
+    }
 }
 .active {
     border-top-left-radius: 0px;
