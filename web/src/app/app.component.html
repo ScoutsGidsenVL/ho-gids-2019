@@ -1,91 +1,93 @@
-<div class="container"
-     [class.is-mobile]="mobileQuery.matches"
-     (swipeleft)="onSwipeLeft($event)"
-     (swiperight)="onSwipeRight($event)">
-  <mat-toolbar color="primary"
-               class="toolbar">
-    <button mat-icon-button
-            aria-label="menu"
-            (click)="sidenav.toggle()">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <h1 class="app-name"
-        [routerLink]="['/']">HO-gids</h1>
-  </mat-toolbar>
+<div class="mat-app-background basic-container">
+  <div class="container"
+       [class.is-mobile]="mobileQuery.matches"
+       (swipeleft)="onSwipeLeft($event)"
+       (swiperight)="onSwipeRight($event)">
+    <mat-toolbar color="primary"
+                 class="toolbar">
+      <button mat-icon-button
+              aria-label="menu"
+              (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <h1 class="app-name"
+          [routerLink]="['/']">HO-gids</h1>
+    </mat-toolbar>
 
-  <mat-sidenav-container class="sidenav-container"
-                         [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-    <mat-sidenav #sidenav
-                 [mode]="mobileQuery.matches ? 'over' : 'side'"
-                 [fixedInViewport]="mobileQuery.matches"
-                 fixedTopGap="56">
-      <mat-nav-list>
-        <h3 mat-subheader>HO-gids</h3>
-        <a mat-list-item
-           routerLink="/home"
-           (click)="sidenav.close()">
-          <mat-icon>home</mat-icon> Home
-        </a>
-        <a mat-list-item
-           routerLink="/calendar"
-           (click)="sidenav.close()">
-          <mat-icon>calendar_today</mat-icon> Programma
-        </a>
-        <a mat-list-item
-           routerLink="/map"
-           (click)="sidenav.close()">
-          <mat-icon>map</mat-icon> Kaart
-        </a>
-        <a mat-list-item
-           routerLink="/annual-song"
-           (click)="sidenav.close()">
-          <mat-icon>music_note</mat-icon> Jaarlied
-        </a>
-        <a mat-list-item
-           routerLink="/praktisch"
-           (click)="sidenav.close()">
-          <mat-icon>near_me</mat-icon> Praktisch
-        </a>
-        <a mat-list-item
-           routerLink="/leefregels"
-           (click)="sidenav.close()">
-          <mat-icon>report</mat-icon> Leefregels
-        </a>
-        <a mat-list-item
-           routerLink="/tijd-voor-inspiratie"
-           (click)="sidenav.close()">
-          <mat-icon>stars</mat-icon> Tijd voor inspiratie
-        </a>
-        <a mat-list-item
-           routerLink="/contact"
-           (click)="sidenav.close()">
-          <mat-icon>contact_support</mat-icon> Contact
-        </a>
-
-        <mat-divider></mat-divider>
-
-        <h3 mat-subheader>Extra's</h3>
-        <a mat-list-item
-           routerLink="/ploeg-it"
-           (click)="sidenav.close()">
-          <mat-icon>videogame_asset</mat-icon> Geocache spel
-        </a>
-        <ng-container *ngIf="serviceWorkerEnabled">
-          <a *ngIf="!updateAvailable"
-             mat-list-item
-             (click)="checkForUpdate()">
-            <mat-icon>update</mat-icon> Check voor updates
+    <mat-sidenav-container class="sidenav-container"
+                           [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+      <mat-sidenav #sidenav
+                   [mode]="mobileQuery.matches ? 'over' : 'side'"
+                   [fixedInViewport]="mobileQuery.matches"
+                   fixedTopGap="56">
+        <mat-nav-list>
+          <h3 mat-subheader>HO-gids</h3>
+          <a mat-list-item
+             routerLink="/home"
+             (click)="sidenav.close()">
+            <mat-icon>home</mat-icon> Home
           </a>
-          <a *ngIf="updateAvailable"
-             mat-list-item
-             (click)="activateUpdate()">
-            <mat-icon>system_update</mat-icon> Activeer update
+          <a mat-list-item
+             routerLink="/calendar"
+             (click)="sidenav.close()">
+            <mat-icon>calendar_today</mat-icon> Programma
           </a>
-        </ng-container>
-      </mat-nav-list>
-    </mat-sidenav>
-    <mat-sidenav-content>
-      <router-outlet></router-outlet>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+          <a mat-list-item
+             routerLink="/map"
+             (click)="sidenav.close()">
+            <mat-icon>map</mat-icon> Kaart
+          </a>
+          <a mat-list-item
+             routerLink="/annual-song"
+             (click)="sidenav.close()">
+            <mat-icon>music_note</mat-icon> Jaarlied
+          </a>
+          <a mat-list-item
+             routerLink="/praktisch"
+             (click)="sidenav.close()">
+            <mat-icon>near_me</mat-icon> Praktisch
+          </a>
+          <a mat-list-item
+             routerLink="/leefregels"
+             (click)="sidenav.close()">
+            <mat-icon>report</mat-icon> Leefregels
+          </a>
+          <a mat-list-item
+             routerLink="/tijd-voor-inspiratie"
+             (click)="sidenav.close()">
+            <mat-icon>stars</mat-icon> Tijd voor inspiratie
+          </a>
+          <a mat-list-item
+             routerLink="/contact"
+             (click)="sidenav.close()">
+            <mat-icon>contact_support</mat-icon> Contact
+          </a>
+
+          <mat-divider></mat-divider>
+
+          <h3 mat-subheader>Extra's</h3>
+          <a mat-list-item
+             routerLink="/ploeg-it"
+             (click)="sidenav.close()">
+            <mat-icon>videogame_asset</mat-icon> Geocache spel
+          </a>
+          <ng-container *ngIf="serviceWorkerEnabled">
+            <a *ngIf="!updateAvailable"
+               mat-list-item
+               (click)="checkForUpdate()">
+              <mat-icon>update</mat-icon> Check voor updates
+            </a>
+            <a *ngIf="updateAvailable"
+               mat-list-item
+               (click)="activateUpdate()">
+              <mat-icon>system_update</mat-icon> Activeer update
+            </a>
+          </ng-container>
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
 </div>
