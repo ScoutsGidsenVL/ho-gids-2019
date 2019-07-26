@@ -1,6 +1,6 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
@@ -24,6 +24,13 @@ import { TijdVoorInspiratieComponent } from './info/tijd-voor-inspiratie/tijd-vo
 import { MapComponent } from './map/map.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PloegItModule } from './ploeg-it/ploeg-it.module';
+
+export class CustomHammerConfig extends HammerGestureConfig {
+  overrides = <any>{
+    'pinch': { enable: false },
+    'rotate': { enable: false }
+  }
+}
 
 @NgModule({
   declarations: [
@@ -53,7 +60,11 @@ import { PloegItModule } from './ploeg-it/ploeg-it.module';
   ],
   providers: [
     CalendarService,
-    CalendarResolverService
+    CalendarResolverService,
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: CustomHammerConfig
+    }
   ],
   bootstrap: [AppComponent]
 })
