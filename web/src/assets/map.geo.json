@@ -185,7 +185,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "KKG",
+                "name": "GG",
                 "style": "podiumgrond",
                 "alias": "KKG markt, KKG podium, KKG groot podium"
             },
@@ -313,7 +313,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "K1",
+                "name": "K8",
                 "style": "kampeergrond"
             },
             "geometry": {
@@ -321,12 +321,74 @@
                 "coordinates": [
                     [
                         [
-                            4.930774569511414,
-                            51.246356600660405
+                            4.931960105895996,
+                            51.245648061172204
                         ],
                         [
-                            4.929664134979248,
-                            51.24622899719831
+                            4.933016896247864,
+                            51.24594020910831
+                        ],
+                        [
+                            4.934186339378357,
+                            51.246168553329525
+                        ],
+                        [
+                            4.933794736862183,
+                            51.24628608300142
+                        ],
+                        [
+                            4.933429956436157,
+                            51.24652785738207
+                        ],
+                        [
+                            4.93235170841217,
+                            51.24642376023511
+                        ],
+                        [
+                            4.932627975940704,
+                            51.246267614072885
+                        ],
+                        [
+                            4.932127743959427,
+                            51.24604514685077
+                        ],
+                        [
+                            4.931927919387817,
+                            51.24589655493694
+                        ],
+                        [
+                            4.931960105895996,
+                            51.245648061172204
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "K7",
+                "style": "kampeergrond"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            4.931498765945435,
+                            51.246410328328
+                        ],
+                        [
+                            4.929739236831665,
+                            51.24628104602168
+                        ],
+                        [
+                            4.929685592651367,
+                            51.24610894888114
+                        ],
+                        [
+                            4.929696321487427,
+                            51.2457555181001
                         ],
                         [
                             4.92961049079895,
@@ -345,36 +407,16 @@
                             51.245758876125024
                         ],
                         [
-                            4.930737018585205,
-                            51.245503665529945
+                            4.931187629699707,
+                            51.24581764152197
                         ],
                         [
-                            4.931906461715698,
-                            51.24560104868727
+                            4.931434392929077,
+                            51.24621892322568
                         ],
                         [
-                            4.933869838714599,
-                            51.24604094934566
-                        ],
-                        [
-                            4.934132695198059,
-                            51.24572865389163
-                        ],
-                        [
-                            4.934535026550293,
-                            51.24587976485998
-                        ],
-                        [
-                            4.933869838714599,
-                            51.246524499413255
-                        ],
-                        [
-                            4.932153224945068,
-                            51.24646741390605
-                        ],
-                        [
-                            4.930774569511414,
-                            51.246356600660405
+                            4.931498765945435,
+                            51.246410328328
                         ]
                     ]
                 ]
@@ -383,7 +425,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "LK1",
+                "name": "8",
                 "style": "loods"
             },
             "geometry": {
@@ -417,7 +459,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "LK7",
+                "name": "10",
                 "style": "loods"
             },
             "geometry": {
@@ -455,7 +497,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "P12",
+                "name": "14",
                 "style": "pavilioen"
             },
             "geometry": {
@@ -497,7 +539,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "K15",
+                "name": "K12",
                 "style": "kampeergrond-ongebruikt"
             },
             "geometry": {
@@ -531,7 +573,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "P11",
+                "name": "6",
                 "style": "pavilioen"
             },
             "geometry": {
@@ -565,7 +607,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "P13",
+                "name": "11",
                 "style": "aanbod"
             },
             "geometry": {
@@ -607,7 +649,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "L314",
+                "name": "SIS",
                 "style": "loods",
                 "comment": "SIS"
             },
@@ -642,7 +684,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "L341",
+                "name": "36",
                 "style": "loods"
             },
             "geometry": {
@@ -676,7 +718,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "P14",
+                "name": "32",
                 "style": "pavilioen"
             },
             "geometry": {
@@ -710,7 +752,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "LK10",
+                "name": "30",
                 "style": "aanbod"
             },
             "geometry": {
@@ -744,7 +786,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "KKK",
+                "name": "KG",
                 "style": "aanbod"
             },
             "geometry": {
@@ -782,7 +824,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "K14",
+                "name": "K33",
                 "style": "aanbod"
             },
             "geometry": {
@@ -836,7 +878,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "K12",
+                "name": "K34",
                 "style": "aanbod"
             },
             "geometry": {
@@ -870,7 +912,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "P3",
+                "name": "35",
                 "style": "pavilioen"
             },
             "geometry": {
@@ -904,7 +946,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "P10",
+                "name": "39",
                 "style": "pavilioen"
             },
             "geometry": {
@@ -973,7 +1015,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "K5",
+                "name": "K42",
                 "style": "kampeergrond"
             },
             "geometry": {
@@ -1007,7 +1049,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "K9",
+                "name": "K41",
                 "style": "kampeergrond"
             },
             "geometry": {
@@ -1049,7 +1091,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "K13",
+                "name": "K43",
                 "style": "kampeergrond-ongebruikt"
             },
             "geometry": {
@@ -1091,7 +1133,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "P1",
+                "name": "47",
                 "style": "pavilioen"
             },
             "geometry": {
@@ -1125,7 +1167,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "K6",
+                "name": "K48",
                 "style": "kampeergrond"
             },
             "geometry": {
@@ -1159,7 +1201,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "K4",
+                "name": "K49",
                 "style": "kampeergrond"
             },
             "geometry": {
@@ -1201,7 +1243,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "P4",
+                "name": "53",
                 "style": "pavilioen"
             },
             "geometry": {
@@ -1235,7 +1277,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "P2",
+                "name": "56",
                 "style": "pavilioen"
             },
             "geometry": {
@@ -1303,7 +1345,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "LK3",
+                "name": "9",
                 "style": "loods"
             },
             "geometry": {
@@ -1337,7 +1379,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "K3",
+                "name": "K9",
                 "style": "kampeergrond"
             },
             "geometry": {
@@ -1379,7 +1421,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "L311",
+                "name": "40",
                 "style": "loods"
             },
             "geometry": {
@@ -1413,7 +1455,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "K11",
+                "name": "K40",
                 "style": "aanbod"
             },
             "geometry": {
@@ -1451,8 +1493,8 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "K7",
-                "style": "kampeergrond"
+                "name": "K30",
+                "style": "aanbod"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1485,7 +1527,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "LK2",
+                "name": "15",
                 "style": "loods"
             },
             "geometry": {
@@ -1519,7 +1561,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "K2",
+                "name": "K15",
                 "style": "kampeergrond-ongebruikt"
             },
             "geometry": {
@@ -1553,7 +1595,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "K2",
+                "name": "K15",
                 "style": "kampeergrond-ongebruikt"
             },
             "geometry": {
@@ -1587,7 +1629,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "L325",
+                "name": "22",
                 "style": "loods"
             },
             "geometry": {
@@ -1621,7 +1663,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "L326",
+                "name": "26",
                 "style": "loods"
             },
             "geometry": {
@@ -1655,7 +1697,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "P15",
+                "name": "28",
                 "style": "pavilioen"
             },
             "geometry": {
@@ -1689,7 +1731,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "P16",
+                "name": "29",
                 "style": "pavilioen"
             },
             "geometry": {
@@ -1757,7 +1799,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "L333",
+                "name": "50",
                 "style": "loods"
             },
             "geometry": {
@@ -1919,7 +1961,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "L327",
+                "name": "27",
                 "style": "loods"
             },
             "geometry": {
@@ -3117,7 +3159,7 @@
             "type": "Feature",
             "properties": {
                 "style": "loods",
-                "name": "LK8"
+                "name": "17"
             },
             "geometry": {
                 "type": "Polygon",
@@ -3151,7 +3193,7 @@
             "type": "Feature",
             "properties": {
                 "style": "loods",
-                "name": "L318"
+                "name": "18"
             },
             "geometry": {
                 "type": "Polygon",
@@ -3474,7 +3516,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "K8",
+                "name": "K17",
                 "style": "kampeergrond-ongebruikt"
             },
             "geometry": {
@@ -3997,7 +4039,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "P8|P7",
+                "name": "4/5",
                 "style": "pavilioen"
             },
             "geometry": {
