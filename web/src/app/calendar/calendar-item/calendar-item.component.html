@@ -3,9 +3,9 @@
                      [expanded]="item.active">
   <mat-expansion-panel-header>
     <mat-panel-title>
-      <span *ngIf="item.showStart">{{item.start | date:'Humm' }}</span>
+      <span *ngIf="item.showStart">{{item.start | date:'Humm':'+0200' }}</span>
       <span *ngIf="item.showStart && item.showEnd">-</span>
-      <span *ngIf="item.showEnd">{{item.end | date:'Humm'}}</span>
+      <span *ngIf="item.showEnd">{{item.end | date:'Humm':'+0200'}}</span>
     </mat-panel-title>
     <mat-panel-description>
       {{item.title}}

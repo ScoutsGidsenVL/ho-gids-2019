@@ -8,7 +8,7 @@
     <mat-list>
       <mat-list-item *ngFor="let foundWord of foundWords">
         <code>{{foundWord.word}}</code> gevonden op locatie {{foundWord.location}} om
-        {{foundWord.time | date:'HH:mm:ss' }}.
+        {{foundWord.time | date:'HH:mm:ss':'+0200' }}.
       </mat-list-item>
     </mat-list>
   </mat-card-content>
