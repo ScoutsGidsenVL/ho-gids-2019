@@ -1,9 +1,8 @@
-<div class="map"
-     leaflet
-     [leafletOptions]="options"
-     [(leafletCenter)]="center">
-    <div *ngIf="geoJsonLayer"
-         [leafletLayer]="geoJsonLayer"></div>
-    <div *ngIf="locationLayer"
-         [leafletLayer]="locationLayer"></div>
+<div class="map">
+     <div leaflet
+          [leafletOptions]="options"
+          [(leafletCenter)]="center">
+          <div *ngIf="geoJsonLayer" [leafletLayer]="geoJsonLayer"></div>
+          <div *ngIf="locationLayer" [leafletLayer]="locationLayer"></div>
+     </div>
 </div>
