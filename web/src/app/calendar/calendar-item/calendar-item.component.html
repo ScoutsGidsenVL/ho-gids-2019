@@ -11,7 +11,7 @@
       {{item.title}}
     </mat-panel-description>
   </mat-expansion-panel-header>
-  <p>{{item.description}}</p>
+  <p [innerHTML]="item.description"></p>
   <a *ngIf="item.location"
      mat-raised-button
      color="primary"

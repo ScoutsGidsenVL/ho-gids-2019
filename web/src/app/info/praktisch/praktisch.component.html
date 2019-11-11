@@ -5,13 +5,13 @@
   <mat-card-content>
     <mat-list>
       <mat-list-item>
-        <span class="hour">20.00 - 1.45</span>
+        <span class="text">20.00 - 1.45</span>
         <p> <a [routerLink]="['/', 'map']"
              [queryParams]="{location: 'K30'}">K30</a> en <a [routerLink]="['/', 'map']"
              [queryParams]="{location: '30'}">Loods 30</a> (zaterdag)</p>
       </mat-list-item>
       <mat-list-item>
-        <span class="hour">20.00 - 2.30</span>
+        <span class="text">20.00 - 2.30</span>
         <p> <a [routerLink]="['/', 'map']"
              [queryParams]="{location: 'GG'}">Grote grond</a></p>
       </mat-list-item>
@@ -28,3 +28,72 @@
 </mat-card>
 <app-emergency-info>
 </app-emergency-info>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Gouw gronden</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item>
+        <span class="text">Antwerpen</span>
+        <p><a [routerLink]="['/', 'map']"
+             [queryParams]="{location: 'K8'}">K8 Zuid</a></p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Heide</span>
+        <p><a [routerLink]="['/', 'map']"
+             [queryParams]="{location: 'K42'}">K42</a></p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Opsinjoor</span>
+        <p><a [routerLink]="['/', 'map']"
+             [queryParams]="{location: 'K10'}">K10</a></p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Kempen</span>
+        <p><a [routerLink]="['/', 'map']"
+             [queryParams]="{location: 'K41'}">K41</a></p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Webra</span>
+        <p><a [routerLink]="['/', 'map']"
+             [queryParams]="{location: 'K8'}">K8 Noord</a></p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Oost-Brabant</span>
+        <p><a [routerLink]="['/', 'map']"
+             [queryParams]="{location: 'K48'}">K48 Oost</a></p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Limburg</span>
+        <p><a [routerLink]="['/', 'map']"
+             [queryParams]="{location: 'K9'}">K9</a></p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Gent</span>
+        <p><a [routerLink]="['/', 'map']"
+             [queryParams]="{location: 'K48'}">K48 West</a></p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Land van Egmont</span>
+        <p><a [routerLink]="['/', 'map']"
+             [queryParams]="{location: 'K49'}">K49 Zuid</a></p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Waas</span>
+        <p><a [routerLink]="['/', 'map']"
+             [queryParams]="{location: 'K7'}">K7 Noord</a></p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Noordzee</span>
+        <p><a [routerLink]="['/', 'map']"
+             [queryParams]="{location: 'K49'}">K49 Noord</a></p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">d Zuid-West-Vlaanderen</span>
+        <p><a [routerLink]="['/', 'map']"
+             [queryParams]="{location: 'K7'}">K7 Zuid</a></p>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

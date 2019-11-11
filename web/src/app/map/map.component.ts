@@ -105,7 +105,12 @@ export class MapComponent implements OnInit, OnDestroy {
     }
     if (layer.feature && layer.feature.properties && layer.feature.properties.name) {
       if (layer.feature.properties.name === name) {
-        return layer._bounds.getCenter();
+        if (layer._bounds) {
+          return layer._bounds.getCenter();
+        }
+        if (layer._latlng) {
+          return layer._latlng;
+        }
       }
     }
     return;
