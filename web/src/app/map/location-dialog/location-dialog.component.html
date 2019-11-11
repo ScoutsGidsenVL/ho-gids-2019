@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>Kan locatie niet vinden</h1>
+<div mat-dialog-content>
+    <p>Ga naar instellingen en kijk na of dat de locatie wordt gedeeld met deze web app.</p>
+    <div *ngIf="data.message">
+        <p>We krijgen volgende fout binnen:</p>
+        <pre>{{data.message}}</pre>
+    </div>
+</div>
+<div mat-dialog-actions>
+    <button mat-button
+            [mat-dialog-close]="'retry'"
+            cdkFocusInitial>Opnieuw proberen</button>
+    <button mat-button
+            color="primary"
+            [mat-dialog-close]="'ignore'">Verdergaan zonder locatie</button>
+</div>

@@ -4,6 +4,8 @@ import { circle, latLng, tileLayer, Circle, LatLng, LayerGroup } from 'leaflet';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
+import { MatDialog } from '@angular/material';
+import { LocationDialogComponent } from './location-dialog/location-dialog.component';
 import { MapService } from './map.service';
 
 @Component({
@@ -15,6 +17,7 @@ export class MapComponent implements OnInit, OnDestroy {
   public onDestroy$ = new Subject();
 
   constructor(mapService: MapService,
+    public dialog: MatDialog,
     route: ActivatedRoute) {
     mapService.geoJson$.pipe(takeUntil(this.onDestroy$))
       .subscribe(geoJson => {
@@ -24,8 +27,10 @@ export class MapComponent implements OnInit, OnDestroy {
 
     route.queryParams.pipe(takeUntil(this.onDestroy$))
       .subscribe(queryParams => {
-        this.options.zoom = 25;
         this.locationName = queryParams.location;
+        if (this.locationName) {
+          this.options.zoom = 25;
+        }
         this.viewLocation();
       });
   }
@@ -57,12 +62,14 @@ export class MapComponent implements OnInit, OnDestroy {
     if (navigator.geolocation) {
       if (!this.center) {
         navigator.geolocation.getCurrentPosition(position => {
+          sessionStorage.removeItem('noLocation');
           this.center = latLng(position.coords.latitude, position.coords.longitude);
         });
       }
 
       const that = this;
       this.locationWatch = navigator.geolocation.watchPosition((position) => {
+        sessionStorage.removeItem('noLocation');
         const cords = latLng(position.coords.latitude, position.coords.longitude);
         if (that.locationLayer) {
           const oldCords = that.locationLayer.getLatLng();
@@ -72,8 +79,9 @@ export class MapComponent implements OnInit, OnDestroy {
           }
         }
         that.locationLayer = circle(cords, { radius: position.coords.accuracy });
-      }, (err) => {
+      }, (error) => {
         that.locationLayer = null;
+        that.openLocationDialog(error);
       }, {
         enableHighAccuracy: true,
         maximumAge: 1000 * 10
@@ -114,5 +122,26 @@ export class MapComponent implements OnInit, OnDestroy {
       }
     }
     return;
+  }
+
+  private openLocationDialog(error: PositionError): void {
+    if (sessionStorage['noLocation']) {
+      return;
+    }
+    const dialogRef = this.dialog.open(LocationDialogComponent, {
+      data: { message: error.message }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if (result === 'ignore') {
+        sessionStorage['noLocation'] = true;
+        return;
+      }
+      if (result === 'retry') {
+        sessionStorage.removeItem('noLocation');
+        this.ngOnInit();
+        return;
+      }
+    });
   }
 }
