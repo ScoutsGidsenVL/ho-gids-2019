@@ -4,29 +4,27 @@
   </mat-card-header>
   <mat-card-content>
     <mat-list>
-      <mat-list-item>De bar op de grote grond sluit om 02.30</mat-list-item>
-      <mat-list-item>De bar van K30 sluit om 01.45</mat-list-item>
-      <mat-list-item>De bar van Loods 30 grond sluit om 01.45 (zaterdag)</mat-list-item>
-      <mat-list-item>De bonnentjesverkoop sluit telkens een half uur vroeger</mat-list-item>
+      <mat-list-item>
+        <span class="hour">20.00 - 1.45</span>
+        <p> <a [routerLink]="['/', 'map']"
+             [queryParams]="{location: 'K30'}">K30</a> en <a [routerLink]="['/', 'map']"
+             [queryParams]="{location: '30'}">Loods 30</a> (zaterdag)</p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="hour">20.00 - 2.30</span>
+        <p> <a [routerLink]="['/', 'map']"
+             [queryParams]="{location: 'GG'}">Grote grond</a></p>
+      </mat-list-item>
     </mat-list>
   </mat-card-content>
 </mat-card>
 <mat-card>
   <mat-card-header>
-    <mat-card-title>Free Wifi</mat-card-title>
+    <mat-card-title>Gratis Wifi</mat-card-title>
     <mat-card-subtitle>Op de grote grond</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <mat-list>
-      <mat-list-item>SSID:&nbsp;
-        <code>[HO] pw=herfstontmoeting</code>
-      </mat-list-item>
-      <mat-list-item>
-        Het wachtwoord is:&nbsp;
-        <code>herfstontmoeting</code>
-      </mat-list-item>
-    </mat-list>
-  </mat-card-content>
+    Verbind met onze gratis WiFi op de grote grond.</mat-card-content>
 </mat-card>
 <app-emergency-info>
 </app-emergency-info>
