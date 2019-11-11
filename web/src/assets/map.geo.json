@@ -1493,7 +1493,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "K30",
+                "name": "K10",
                 "style": "aanbod"
             },
             "geometry": {
@@ -1765,7 +1765,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "K10",
+                "name": "K30",
                 "style": "aanbod"
             },
             "geometry": {
