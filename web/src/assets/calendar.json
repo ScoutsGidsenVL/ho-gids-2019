@@ -8,7 +8,8 @@
                 "title": "Aankomst",
                 "description": "",
                 "showStart": true,
-                "showEnd": false
+                "showEnd": false,
+                "location": "GG"
             },
             {
                 "start": "2019-08-23T20:00:00+02:00",
@@ -16,7 +17,8 @@
                 "title": "Installeren & Onthaal op de gouwgrond",
                 "description": "Onthaal en instapactiviteit op de gouwgrond",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-23T22:45:00+02:00",
@@ -24,7 +26,8 @@
                 "title": "Verplaatsing naar de grote grond",
                 "description": "",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-23T23:00:00+02:00",
@@ -32,7 +35,8 @@
                 "title": "Opwarmer",
                 "description": "",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-23T23:15:00+02:00",
@@ -40,7 +44,8 @@
                 "title": "Openingsshow",
                 "description": "Opening met jaarlied en jaardans",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-24T00:00:00+02:00",
@@ -48,7 +53,8 @@
                 "title": "Scouteske avond",
                 "description": "HOOFDPODIUM\n23.00 › 23.15 opwarmer\n23.15 › 00.00 openingsshow\n00.10 › 00.50 zangavond met zingende Kaketoe\n01.00 › 02.00 scouteske interactieve fuif met de Mighty HO Party Rangers\n\nK30\n00.00 › 01.45 scouteske karaoke\n\nK30 LOODS\n00.00 › 01.45 pijl en boog\n\nKAMPVUURKRING\n21.00 › 02.30 kampvuur\n",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-24T02:30:00+02:00",
@@ -56,7 +62,8 @@
                 "title": "Slaapwel",
                 "description": "",
                 "showStart": true,
-                "showEnd": false
+                "showEnd": false,
+                "location": "GG"
             }
         ]
     },
@@ -69,7 +76,8 @@
                 "title": "Opstaan en ontbijten",
                 "description": "",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-24T09:00:00+02:00",
@@ -77,7 +85,8 @@
                 "title": "Districtsmoment",
                 "description": "",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-24T10:30:00+02:00",
@@ -85,7 +94,8 @@
                 "title": "Markt",
                 "description": "",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-24T11:45:00+02:00",
@@ -93,7 +103,8 @@
                 "title": "Massalunch",
                 "description": "",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-24T13:00:00+02:00",
@@ -101,7 +112,8 @@
                 "title": "Jaarthemashow",
                 "description": "Show - Jaarlied",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-24T13:50:00+02:00",
@@ -109,7 +121,8 @@
                 "title": "Tak- & themamoment",
                 "description": "Kapoenen kamp 30\nWelpen - Kabouters kamp 33\nJonggidsen - Jongverkenners kamp 34\nGidsen - Verkenners vijver\nJins kamp 40\nGroepsleiding GG + N&A\nZeescouting vijver\nAkabe KG + loods kamp 30\nEHBO grote tent op GG\nTechnieken GG rond kampvuur\nHelp ik stop als leiding aan gebouw 36\nEvaluatie kadervorming infopunt",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-24T15:50:00+02:00",
@@ -117,7 +130,8 @@
                 "title": "Energizers",
                 "description": "",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-24T16:30:00+02:00",
@@ -125,7 +139,8 @@
                 "title": "Tak- en themamoment",
                 "description": "Kapoenen kamp 30\nWelpen - Kabouters kamp 33\nJonggidsen - Jongverkenners kamp 34\nGidsen - Verkenners vijver\nJins kamp 40\nGroepsleiding GG + N&A\nZeescouting vijver\nAkabe KG + loods kamp 30\nEHBO grote tent op GG\nTechnieken GG rond kampvuur\nHelp ik stop als leiding aan gebouw 36\nEvaluatie kadervorming infopunt",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-24T18:40:00+02:00",
@@ -133,7 +148,8 @@
                 "title": "Avondeten op de gouwgrond",
                 "description": "",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-24T20:00:00+02:00",
@@ -141,7 +157,8 @@
                 "title": "Gouwmoment",
                 "description": "",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-24T22:45:00+02:00",
@@ -149,7 +166,8 @@
                 "title": "Zingevingsmoment",
                 "description": "",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-24T23:00:00+02:00",
@@ -157,7 +175,8 @@
                 "title": "Avondaanbod",
                 "description": "HOOFDPODIUM\n23.00 › 00.00 The Fabiola Fun Fuckers\n00.15 › 02.00 DJ Maarksemse Kaaremis\n\nZEESCOUTINGCAFE - K30\n23.00 › 00.15 Marine V\n00.30 › 01.45 RP Bastards\n\nHOPPERCAFE - K30 LOODS\n23.00 › 00.15 Redwood Dawn\n00.45 › 01.45 Pink Lemon\n\nKAMPVUURKRING\n23.00 › 02.30 kampvuur\n\nNAAST GEBOUW 36 (AAN RODE KRUIS)\n23.00 › 01.45 Gejinterneerd",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-25T02:30:00+02:00",
@@ -165,7 +184,8 @@
                 "title": "Slaapwel",
                 "description": "",
                 "showStart": true,
-                "showEnd": false
+                "showEnd": false,
+                "location": "GG"
             }
         ]
     },
@@ -178,7 +198,8 @@
                 "title": "Opstaan & ontbijten",
                 "description": "",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-25T09:00:00+02:00",
@@ -186,7 +207,8 @@
                 "title": "Opruimen & afbraak",
                 "description": "",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-25T11:00:00+02:00",
@@ -194,7 +216,8 @@
                 "title": "Jaarlieddans",
                 "description": "",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-25T11:15:00+02:00",
@@ -202,7 +225,8 @@
                 "title": "GOE Spel",
                 "description": "",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-25T12:15:00+02:00",
@@ -210,7 +234,8 @@
                 "title": "Afsluiter HO",
                 "description": "",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-25T12:30:00+02:00",
@@ -218,7 +243,8 @@
                 "title": "Massapicknick",
                 "description": "",
                 "showStart": true,
-                "showEnd": true
+                "showEnd": true,
+                "location": "GG"
             },
             {
                 "start": "2019-08-25T13:00:00+02:00",
@@ -226,7 +252,8 @@
                 "title": "Einde",
                 "description": "",
                 "showStart": true,
-                "showEnd": false
+                "showEnd": false,
+                "location": "GG"
             }
         ]
     }

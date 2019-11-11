@@ -1,8 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { circle, latLng, tileLayer, Circle, LatLng } from 'leaflet';
-
+import { ActivatedRoute, Route } from '@angular/router';
+import { circle, latLng, tileLayer, Circle, LatLng, LayerGroup } from 'leaflet';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+
 import { MapService } from './map.service';
 
 @Component({
@@ -13,10 +14,20 @@ import { MapService } from './map.service';
 export class MapComponent implements OnInit, OnDestroy {
   public onDestroy$ = new Subject();
 
-  constructor(mapService: MapService) {
-    mapService.geoJson$.pipe(takeUntil(this.onDestroy$)).subscribe(geoJson => {
-      this.geoJsonLayer = geoJson;
-    });
+  constructor(mapService: MapService,
+    route: ActivatedRoute) {
+    mapService.geoJson$.pipe(takeUntil(this.onDestroy$))
+      .subscribe(geoJson => {
+        this.geoJsonLayer = geoJson;
+        this.viewLocation();
+      });
+
+    route.queryParams.pipe(takeUntil(this.onDestroy$))
+      .subscribe(queryParams => {
+        this.options.zoom = 25;
+        this.locationName = queryParams.location;
+        this.viewLocation();
+      });
   }
 
   public options = {
@@ -28,8 +39,9 @@ export class MapComponent implements OnInit, OnDestroy {
   };
 
   public center: LatLng;
+  public locationName: string;
   public locationLayer: Circle;
-  public geoJsonLayer: Circle;
+  public geoJsonLayer: LayerGroup<any>;
 
   private locationWatch: number;
 
@@ -43,9 +55,11 @@ export class MapComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(position => {
-        this.center = latLng(position.coords.latitude, position.coords.longitude);
-      });
+      if (!this.center) {
+        navigator.geolocation.getCurrentPosition(position => {
+          this.center = latLng(position.coords.latitude, position.coords.longitude);
+        });
+      }
 
       const that = this;
       this.locationWatch = navigator.geolocation.watchPosition((position) => {
@@ -61,9 +75,39 @@ export class MapComponent implements OnInit, OnDestroy {
       }, (err) => {
         that.locationLayer = null;
       }, {
-          enableHighAccuracy: true,
-          maximumAge: 1000 * 10
-        });
+        enableHighAccuracy: true,
+        maximumAge: 1000 * 10
+      });
     }
+  }
+
+  private viewLocation(): LatLng {
+    if (!this.locationName || !this.geoJsonLayer) {
+      return;
+    }
+    const location = this.parseLayersAndFindCenter(this.geoJsonLayer, this.locationName);
+    if (location) {
+      this.center = location;
+      this.options.center = location;
+    }
+  }
+
+  private parseLayersAndFindCenter(layer: any, name: string): LatLng {
+    if (layer._layers) {
+      const keys = Object.keys(layer._layers);
+      for (const key of keys) {
+        const child = layer._layers[key];
+        const result = this.parseLayersAndFindCenter(child, name);
+        if (result) {
+          return result;
+        }
+      }
+    }
+    if (layer.feature && layer.feature.properties && layer.feature.properties.name) {
+      if (layer.feature.properties.name === name) {
+        return layer._bounds.getCenter();
+      }
+    }
+    return;
   }
 }

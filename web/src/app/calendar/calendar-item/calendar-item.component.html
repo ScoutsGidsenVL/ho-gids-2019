@@ -12,4 +12,10 @@
     </mat-panel-description>
   </mat-expansion-panel-header>
   <p>{{item.description}}</p>
+  <a *ngIf="item.location"
+     mat-raised-button
+     color="primary"
+     [routerLink]="['/', 'map']"
+     [queryParams]="{location: item.location}">
+    {{item.location}} </a>
 </mat-expansion-panel>

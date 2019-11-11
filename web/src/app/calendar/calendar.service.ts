@@ -17,6 +17,7 @@ export interface CalendarItem {
   showEnd: boolean;
   active: boolean;
   passed: boolean;
+  location: string;
 }
 
 @Injectable({

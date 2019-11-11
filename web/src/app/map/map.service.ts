@@ -10,8 +10,8 @@ import { filter } from 'rxjs/operators';
 })
 export class MapService {
 
-  private geoJsonSubject$: BehaviorSubject<any> = new BehaviorSubject<any>(null);
-  public geoJson$ = this.geoJsonSubject$.asObservable().pipe(filter(x => x));
+  private geoJsonSubject$: BehaviorSubject<LayerGroup<any>> = new BehaviorSubject<LayerGroup<any>>(null);
+  public geoJson$ = this.geoJsonSubject$.asObservable().pipe(filter(x => !!x));
 
   constructor(http: HttpClient) {
     http.get('./assets/map.geo.json').subscribe((data: any) => {
@@ -229,13 +229,14 @@ export class MapService {
         }
       }
 
-      layerGroup.addLayer(geoJSON(data,
+      const geoJsonLayer = geoJSON(data,
         {
           style: style,
           pointToLayer: markerIcon,
           filter: mapFilter,
-          onEachFeature: onEachFeature,
-        }));
+          onEachFeature: onEachFeature
+        });
+      layerGroup.addLayer(geoJsonLayer);
       this.geoJsonSubject$.next(layerGroup);
     });
   }
