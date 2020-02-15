@@ -4,7 +4,7 @@ import { circle, latLng, tileLayer, Circle, LatLng, LayerGroup } from 'leaflet';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
-import { MatDialog } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 import { LocationDialogComponent } from './location-dialog/location-dialog.component';
 import { MapService } from './map.service';
 

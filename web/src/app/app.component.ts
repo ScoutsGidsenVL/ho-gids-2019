@@ -1,6 +1,7 @@
 import { MediaMatcher } from '@angular/cdk/layout';
 import { ApplicationRef, ChangeDetectorRef, Component, OnDestroy, ViewChild } from '@angular/core';
-import { MatSidenav, MatSnackBar } from '@angular/material';
+import { MatSidenav } from '@angular/material/sidenav';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { NavigationEnd, Router } from '@angular/router';
 import { SwUpdate } from '@angular/service-worker';
 import { concat, interval, Subject } from 'rxjs';
