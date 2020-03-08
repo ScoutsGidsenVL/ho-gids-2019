@@ -18,6 +18,7 @@ export interface CalendarItem {
   active: boolean;
   passed: boolean;
   location: string;
+  id: string;
 }
 
 @Injectable({
@@ -35,9 +36,13 @@ export class CalendarService {
         return calendar;
       }
 
+      let index = 0;
       const current = new Date();
       calendar.forEach(day => {
         day.items.forEach(item => {
+          item.id = 'calendar-item-' + index;
+          index += 1;
+
           item.active = item.start <= current && current < item.end;
           item.passed = current >= item.end;
           if (item.active) {

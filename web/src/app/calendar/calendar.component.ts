@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
@@ -10,7 +10,7 @@ import { CalendarDay, CalendarService } from './calendar.service';
   templateUrl: './calendar.component.html',
   styleUrls: ['./calendar.component.scss']
 })
-export class CalendarComponent implements OnDestroy {
+export class CalendarComponent implements OnDestroy, AfterViewInit {
   public onDestroy$ = new Subject();
 
   public selectedIndex: number;
@@ -46,5 +46,23 @@ export class CalendarComponent implements OnDestroy {
   ngOnDestroy(): void {
     this.onDestroy$.next();
     this.onDestroy$.complete();
+  }
+
+  ngAfterViewInit(): void {
+    if (this.calendar) {
+      const activeDay = this.calendar.find(x => x.active);
+      if (activeDay) {
+        const activeItem = activeDay.items.find(x => x.active);
+        if (activeItem) {
+          const element = document.querySelector('#' + activeItem.id);
+          if (element) {
+            try {
+              element.scrollIntoView();
+            } catch (e) {
+            }
+          }
+        }
+      }
+    }
   }
 }
