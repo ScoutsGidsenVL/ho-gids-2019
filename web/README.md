@@ -5,7 +5,7 @@
 ### Installing packages
 
 ```
-cd client
+cd web
 npm install -g @angular/cli
 npm install
 ```
