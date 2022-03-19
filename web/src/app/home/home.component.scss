@@ -4,6 +4,10 @@
 }
 .voorwoord-header-image {
     max-height: 300px;
+    width: unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 mat-card {
