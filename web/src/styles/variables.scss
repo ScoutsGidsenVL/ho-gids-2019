@@ -6,21 +6,21 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 
-$md-scoutmoedig: (
-    50 : #e0e4ed,
-    100 : #b3bcd2,
-    200 : #8090b4,
-    300 : #4d6496,
-    400 : #264280,
-    500 : #002169,
-    600 : #001d61,
-    700 : #001856,
-    800 : #00144c,
-    900 : #000b3b,
-    A100 : #717eff,
-    A200 : #3e50ff,
-    A400 : #0b22ff,
-    A700 : #0016f1,
+$md-dasgoesting: (
+    50 : #e3cac9,
+    100 : #e1adac,
+    200 : #de605e,
+    300 : #ee4946,
+    400 : #f04542,
+    500 : #e32f2b,
+    600 : #cd201d,
+    700 : #a20f0c,
+    800 : #860a08,
+    900 : #6d0503,
+    A100 : #8baeac,
+    A200 : #709e9b,
+    A400 : #48827f,
+    A700 : #2e6260,
     contrast: (
         50: $dark-primary-text,
         100: $dark-primary-text,
@@ -40,7 +40,7 @@ $md-scoutmoedig: (
 );
 
 
-$client-primary: mat-palette($md-scoutmoedig);
+$client-primary: mat-palette($md-dasgoesting);
 $client-accent: mat-palette($mat-brown, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
