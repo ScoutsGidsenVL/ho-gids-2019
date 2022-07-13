@@ -22,8 +22,53 @@
             },
             {
                 "start": "2022-08-26T23:00:00+02:00",
-                "end": "2022-08-27T02:00:00+02:00",
-                "title": "Openingsshow en scouteske avond",
+                "end": "2022-08-26T23:15:00+02:00",
+                "title": "Opwarmer",
+                "description": "",
+                "showStart": true,
+                "showEnd": true,
+                "location": "GG"
+            },
+            {
+                "start": "2022-08-26T23:15:00+02:00",
+                "end": "2022-08-27T00:00:00+02:00",
+                "title": "Openingsshow",
+                "description": "",
+                "showStart": true,
+                "showEnd": true,
+                "location": "GG"
+            },
+            {
+                "start": "2022-08-27T00:00:00+02:00",
+                "end": "2022-08-27T01:45:00+02:00",
+                "title": "Scouteske karaoke",
+                "description": "",
+                "showStart": true,
+                "showEnd": true,
+                "location": "K30"
+            },
+            {
+                "start": "2022-08-27T00:00:00+02:00",
+                "end": "2022-08-27T01:45:00+02:00",
+                "title": "Pijl en boog",
+                "description": "",
+                "showStart": true,
+                "showEnd": true,
+                "location": "K30 loods"
+            },
+            {
+                "start": "2022-08-27T00:10:00+02:00",
+                "end": "2022-08-27T00:50:00+02:00",
+                "title": "Jaarliedband",
+                "description": "",
+                "showStart": true,
+                "showEnd": true,
+                "location": "GG"
+            },
+            {
+                "start": "2022-08-27T01:00:00+02:00",
+                "end": "2022-08-27T01:50:00+02:00",
+                "title": "DJ Battle",
                 "description": "",
                 "showStart": true,
                 "showEnd": true,
@@ -89,9 +134,54 @@
                 "location": "GG"
             },
             {
-                "start": "2022-08-27T22:00:00+02:00",
+                "start": "2022-08-27T23:00:00+02:00",
+                "end": "2022-08-27T23:40:00+02:00",
+                "title": "Winnaar DJ-battle",
+                "description": "",
+                "showStart": true,
+                "showEnd": true,
+                "location": "GG"
+            },
+            {
+                "start": "2022-08-27T23:15:00+02:00",
+                "end": "2022-08-28T01:45:00+02:00",
+                "title": "Scouteske karaoke",
+                "description": "",
+                "showStart": true,
+                "showEnd": true,
+                "location": "K30"
+            },
+            {
+                "start": "2022-08-27T23:15:00+02:00",
+                "end": "2022-08-28T00:15:00+02:00",
+                "title": "The Attic",
+                "description": "",
+                "showStart": true,
+                "showEnd": true,
+                "location": "K30 loods"
+            },
+            {
+                "start": "2022-08-27T23:50:00+02:00",
+                "end": "2022-08-28T00:50:00+02:00",
+                "title": "Simon Collective",
+                "description": "",
+                "showStart": true,
+                "showEnd": true,
+                "location": "GG"
+            },
+            {
+                "start": "2022-08-28T00:45:00+02:00",
+                "end": "2022-08-28T01:45:00+02:00",
+                "title": "Nancy's Neighbours",
+                "description": "",
+                "showStart": true,
+                "showEnd": true,
+                "location": "K30 loods"
+            },
+            {
+                "start": "2022-08-28T01:00:00+02:00",
                 "end": "2022-08-28T02:00:00+02:00",
-                "title": "Feest",
+                "title": "DJ Alles Kapot",
                 "description": "",
                 "showStart": true,
                 "showEnd": true,
@@ -131,8 +221,17 @@
             },
             {
                 "start": "2022-08-28T11:30:00+02:00",
+                "end": "2022-08-28T12:30:00+02:00",
+                "title": "Verrassingsact vol goesting",
+                "description": "",
+                "showStart": true,
+                "showEnd": true,
+                "location": "GG"
+            },
+            {
+                "start": "2022-08-28T12:30:00+02:00",
                 "end": "2022-08-28T13:30:00+02:00",
-                "title": "Verrassingsact vol goesting & lunch",
+                "title": "Lunch op de grote grond",
                 "description": "",
                 "showStart": true,
                 "showEnd": true,
