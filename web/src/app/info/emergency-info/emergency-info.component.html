@@ -1,13 +1,21 @@
 <mat-card>
   <mat-card-header>
     <mat-card-title>Noodgevallen</mat-card-title>
+    <mat-card-subtitle>Verwittig de hulpdiensten niet zelf!</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <p>Verwittig de hulpdiensten nooit rechtstreeks.</p>
     <h3>Ernstige ongevallen</h3>
-    <p>Bel het noodnummer (<a href="tel:+32474261401">+32 474 26 14 01</a>) van Scouts en Gidsen Vlaanderen.</p>
-    <h3> Voor kleine ongevallen</h3>
-    <p> ga je naar het <a [routerLink]="['/', 'map']"
-         [queryParams]="{location: '36'}">Rode Kruis (gebouw 36)</a>.</p>
+    <p>
+      Zit je met iets?<br />
+      Voel je je onveilig?<br />
+      Wil je een bezorgdheid delen?
+    </p>
+    <p>
+      Bel het noodnummer (<a href="tel:+32474261401">+32 474 26 14 01</a>) van Scouts en Gidsen Vlaanderen.
+    </p>
+    <h3>Kleine ongevallen</h3>
+    <p>
+      Ga naar het <a [routerLink]="['/', 'map']" [queryParams]="{location: 'EHBO'}">Rode Kruis (gebouw 39)</a>.
+    </p>
   </mat-card-content>
 </mat-card>
