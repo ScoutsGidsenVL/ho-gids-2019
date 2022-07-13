@@ -3,8 +3,8 @@
         "label": "Vrijdag",
         "items": [
             {
-                "start": "2019-08-23T19:00:00+02:00",
-                "end": "2019-08-23T20:00:00+02:00",
+                "start": "2022-08-26T19:00:00+02:00",
+                "end": "2022-08-26T20:00:00+02:00",
                 "title": "Aankomst",
                 "description": "",
                 "showStart": true,
@@ -12,57 +12,30 @@
                 "location": "GG"
             },
             {
-                "start": "2019-08-23T20:00:00+02:00",
-                "end": "2019-08-23T22:45:00+02:00",
-                "title": "Installeren & Onthaal op de gouwgrond",
-                "description": "Onthaal en instapactiviteit op de gouwgrond",
-                "showStart": true,
-                "showEnd": true,
-                "location": "GG"
-            },
-            {
-                "start": "2019-08-23T22:45:00+02:00",
-                "end": "2019-08-23T23:00:00+02:00",
-                "title": "Verplaatsing naar de grote grond",
+                "start": "2022-08-26T20:00:00+02:00",
+                "end": "2022-08-26T22:30:00+02:00",
+                "title": "Installeren & onthaalactiviteit",
                 "description": "",
                 "showStart": true,
                 "showEnd": true,
                 "location": "GG"
             },
             {
-                "start": "2019-08-23T23:00:00+02:00",
-                "end": "2019-08-23T23:15:00+02:00",
-                "title": "Opwarmer",
+                "start": "2022-08-26T23:00:00+02:00",
+                "end": "2022-08-27T02:00:00+02:00",
+                "title": "Openingsshow en scouteske avond",
                 "description": "",
                 "showStart": true,
                 "showEnd": true,
                 "location": "GG"
             },
             {
-                "start": "2019-08-23T23:15:00+02:00",
-                "end": "2019-08-24T00:00:00+02:00",
-                "title": "Openingsshow",
-                "description": "Opening met jaarlied en jaardans",
-                "showStart": true,
-                "showEnd": true,
-                "location": "GG"
-            },
-            {
-                "start": "2019-08-24T00:00:00+02:00",
-                "end": "2019-08-24T02:00:00+02:00",
-                "title": "Scouteske avond",
-                "description": "HOOFDPODIUM<br>23.00 › 23.15 opwarmer<br>23.15 › 00.00 openingsshow<br>00.10 › 00.50 zangavond met zingende Kaketoe<br>01.00 › 02.00 scouteske interactieve fuif met de Mighty HO Party Rangers<br><br>K30<br>00.00 › 01.45 scouteske karaoke<br><br>K30 LOODS<br>00.00 › 01.45 pijl en boog<br><br>KAMPVUURKRING<br>21.00 › 02.30 kampvuur<br>",
-                "showStart": true,
-                "showEnd": true,
-                "location": "GG"
-            },
-            {
-                "start": "2019-08-24T02:30:00+02:00",
-                "end": "2019-08-24T04:00:00+02:00",
+                "start": "2022-08-27T02:00:00+02:00",
+                "end": "2022-08-27T02:30:00+02:00",
                 "title": "Slaapwel",
                 "description": "",
                 "showStart": true,
-                "showEnd": false,
+                "showEnd": true,
                 "location": "GG"
             }
         ]
@@ -71,8 +44,8 @@
         "label": "Zaterdag",
         "items": [
             {
-                "start": "2019-08-24T08:00:00+02:00",
-                "end": "2019-08-24T09:00:00+02:00",
+                "start": "2022-08-27T08:30:00+02:00",
+                "end": "2022-08-27T09:30:00+02:00",
                 "title": "Opstaan en ontbijten",
                 "description": "",
                 "showStart": true,
@@ -80,109 +53,57 @@
                 "location": "GG"
             },
             {
-                "start": "2019-08-24T09:00:00+02:00",
-                "end": "2019-08-24T10:00:00+02:00",
-                "title": "Districtsmoment",
+                "start": "2022-08-27T10:00:00+02:00",
+                "end": "2022-08-27T13:00:00+02:00",
+                "title": "Goesting in inspiratie en goesting in actie",
                 "description": "",
                 "showStart": true,
                 "showEnd": true,
                 "location": "GG"
             },
             {
-                "start": "2019-08-24T10:30:00+02:00",
-                "end": "2019-08-24T12:30:00+02:00",
-                "title": "Markt",
+                "start": "2022-08-27T13:00:00+02:00",
+                "end": "2022-08-27T15:00:00+02:00",
+                "title": "Eten & show op de grote grond",
                 "description": "",
                 "showStart": true,
                 "showEnd": true,
                 "location": "GG"
             },
             {
-                "start": "2019-08-24T11:45:00+02:00",
-                "end": "2019-08-24T13:00:00+02:00",
-                "title": "Massalunch",
+                "start": "2022-08-27T15:00:00+02:00",
+                "end": "2022-08-27T18:00:00+02:00",
+                "title": "Marktje op de grote grond",
                 "description": "",
                 "showStart": true,
                 "showEnd": true,
                 "location": "GG"
             },
             {
-                "start": "2019-08-24T13:00:00+02:00",
-                "end": "2019-08-24T13:30:00+02:00",
-                "title": "Jaarthemashow",
-                "description": "Show - Jaarlied",
-                "showStart": true,
-                "showEnd": true,
-                "location": "GG"
-            },
-            {
-                "start": "2019-08-24T13:50:00+02:00",
-                "end": "2019-08-24T15:40:00+02:00",
-                "title": "Tak- & themamoment",
-                "description": "Kapoenen <a href=\"/map?location=K30\">kamp 30</a><br>Welpen - Kabouters <a href=\"/map?location=K33\">kamp 33</a><br>Jonggidsen - Jongverkenners <a href=\"/map?location=K34\">kamp 34</a><br>Gidsen - Verkenners <a href=\"/map?location=Vijver 1\">vijver</a><br>Jins <a href=\"/map?location=K40\">kamp 40</a><br>Groepsleiding <a href=\"/map?location=GG\">GG</a> + N&A<br>Zeescouting <a href=\"/map?location=Vijver 1\">vijver</a><br>Akabe <a href=\"/map?location=KG\">KG</a> + loods <a href=\"/map?location=K30\">kamp 30</a><br>EHBO grote tent op <a href=\"/map?location=GG\">GG</a><br>Technieken <a href=\"/map?location=GG\">GG</a> rond kampvuur<br>Help ik stop als leiding aan <a href=\"/map?location=36\">gebouw 36</a><br>Evaluatie kadervorming <a href=\"/map?location=infopunt\">infopunt</a>",
-                "showStart": true,
-                "showEnd": true
-            },
-            {
-                "start": "2019-08-24T15:50:00+02:00",
-                "end": "2019-08-24T16:10:00+02:00",
-                "title": "Energizers",
+                "start": "2022-08-27T18:00:00+02:00",
+                "end": "2022-08-27T22:00:00+02:00",
+                "title": "District/grouwmoment & eten op de gouwgrond",
                 "description": "",
                 "showStart": true,
                 "showEnd": true,
                 "location": "GG"
             },
             {
-                "start": "2019-08-24T16:30:00+02:00",
-                "end": "2019-08-24T18:20:00+02:00",
-                "title": "Tak- en themamoment",
-                "description": "Kapoenen <a href=\"/map?location=K30\">kamp 30</a><br>Welpen - Kabouters <a href=\"/map?location=K33\">kamp 33</a><br>Jonggidsen - Jongverkenners <a href=\"/map?location=K34\">kamp 34</a><br>Gidsen - Verkenners <a href=\"/map?location=vijver\">vijver</a><br>Jins <a href=\"/map?location=K40\">kamp 40</a><br>Groepsleiding <a href=\"/map?location=GG\">GG</a> + N&A<br>Zeescouting <a href=\"/map?location=vijver\">vijver</a><br>Akabe <a href=\"/map?location=KG\">KG</a> + loods <a href=\"/map?location=K30\">kamp 30</a><br>EHBO grote tent op <a href=\"/map?location=GG\">GG</a><br>Technieken <a href=\"/map?location=GG\">GG</a> rond kampvuur<br>Help ik stop als leiding aan <a href=\"/map?location=36\">gebouw 36</a><br>Evaluatie kadervorming <a href=\"/map?location=infopunt\">infopunt</a>",
-                "showStart": true,
-                "showEnd": true
-            },
-            {
-                "start": "2019-08-24T18:40:00+02:00",
-                "end": "2019-08-24T20:00:00+02:00",
-                "title": "Avondeten op de gouwgrond",
+                "start": "2022-08-27T22:00:00+02:00",
+                "end": "2022-08-28T02:00:00+02:00",
+                "title": "Feest",
                 "description": "",
                 "showStart": true,
                 "showEnd": true,
                 "location": "GG"
             },
             {
-                "start": "2019-08-24T20:00:00+02:00",
-                "end": "2019-08-24T22:30:00+02:00",
-                "title": "Gouwmoment",
-                "description": "",
-                "showStart": true,
-                "showEnd": true,
-                "location": "GG"
-            },
-            {
-                "start": "2019-08-24T22:45:00+02:00",
-                "end": "2019-08-24T23:00:00+02:00",
-                "title": "Zingevingsmoment",
-                "description": "",
-                "showStart": true,
-                "showEnd": true,
-                "location": "GG"
-            },
-            {
-                "start": "2019-08-24T23:00:00+02:00",
-                "end": "2019-08-25T02:00:00+02:00",
-                "title": "Avondaanbod",
-                "description": "HOOFDPODIUM<br>23.00 › 00.00 The Fabiola Fun Fuckers<br>00.15 › 02.00 DJ Maarksemse Kaaremis<br><br>ZEESCOUTINGCAFE - K30<br>23.00 › 00.15 Marine V<br>00.30 › 01.45 RP Bastards<br><br>HOPPERCAFE - K30 LOODS<br>23.00 › 00.15 Redwood Dawn<br>00.45 › 01.45 Pink Lemon<br><br>KAMPVUURKRING<br>23.00 › 02.30 kampvuur<br><br>NAAST GEBOUW 36 (AAN RODE KRUIS)<br>23.00 › 01.45 Gejinterneerd",
-                "showStart": true,
-                "showEnd": true,
-                "location": "GG"
-            },
-            {
-                "start": "2019-08-25T02:30:00+02:00",
-                "end": "2019-08-25T04:00:00+02:00",
+                "start": "2022-08-28T02:00:00+02:00",
+                "end": "2022-08-28T02:30:00+02:00",
                 "title": "Slaapwel",
                 "description": "",
                 "showStart": true,
-                "showEnd": false,
+                "showEnd": true,
                 "location": "GG"
             }
         ]
@@ -191,8 +112,8 @@
         "label": "Zondag",
         "items": [
             {
-                "start": "2019-08-25T08:00:00+02:00",
-                "end": "2019-08-25T09:00:00+02:00",
+                "start": "2022-08-28T08:30:00+02:00",
+                "end": "2022-08-28T09:30:00+02:00",
                 "title": "Opstaan & ontbijten",
                 "description": "",
                 "showStart": true,
@@ -200,8 +121,8 @@
                 "location": "GG"
             },
             {
-                "start": "2019-08-25T09:00:00+02:00",
-                "end": "2019-08-25T11:00:00+02:00",
+                "start": "2022-08-28T09:30:00+02:00",
+                "end": "2022-08-28T11:00:00+02:00",
                 "title": "Opruimen & afbraak",
                 "description": "",
                 "showStart": true,
@@ -209,45 +130,18 @@
                 "location": "GG"
             },
             {
-                "start": "2019-08-25T11:00:00+02:00",
-                "end": "2019-08-25T11:15:00+02:00",
-                "title": "Jaarlieddans",
+                "start": "2022-08-28T11:30:00+02:00",
+                "end": "2022-08-28T13:30:00+02:00",
+                "title": "Verrassingsact vol goesting & lunch",
                 "description": "",
                 "showStart": true,
                 "showEnd": true,
                 "location": "GG"
             },
             {
-                "start": "2019-08-25T11:15:00+02:00",
-                "end": "2019-08-25T12:15:00+02:00",
-                "title": "GOE Spel",
-                "description": "",
-                "showStart": true,
-                "showEnd": true,
-                "location": "GG"
-            },
-            {
-                "start": "2019-08-25T12:15:00+02:00",
-                "end": "2019-08-25T12:30:00+02:00",
-                "title": "Afsluiter HO",
-                "description": "",
-                "showStart": true,
-                "showEnd": true,
-                "location": "GG"
-            },
-            {
-                "start": "2019-08-25T12:30:00+02:00",
-                "end": "2019-08-25T13:00:00+02:00",
-                "title": "Massapicknick",
-                "description": "",
-                "showStart": true,
-                "showEnd": true,
-                "location": "GG"
-            },
-            {
-                "start": "2019-08-25T13:00:00+02:00",
-                "end": "2019-08-25T20:00:00+02:00",
-                "title": "Einde",
+                "start": "2022-08-28T13:30:00+02:00",
+                "end": "2022-08-28T20:00:00+02:00",
+                "title": "Einde HO",
                 "description": "",
                 "showStart": true,
                 "showEnd": false,
