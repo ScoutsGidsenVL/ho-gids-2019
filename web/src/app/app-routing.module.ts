@@ -9,7 +9,6 @@ import { HomeComponent } from './home/home.component';
 import { InfoComponent } from './info/info.component';
 import { LeefregelsComponent } from './info/leefregels/leefregels.component';
 import { PraktischComponent } from './info/praktisch/praktisch.component';
-import { TijdVoorInspiratieComponent } from './info/tijd-voor-inspiratie/tijd-voor-inspiratie.component';
 import { MapComponent } from './map/map.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
@@ -34,10 +33,6 @@ const routes: Routes = [
   {
     path: 'praktisch',
     component: PraktischComponent
-  },
-  {
-    path: 'tijd-voor-inspiratie',
-    component: TijdVoorInspiratieComponent
   },
   {
     path: 'map',
