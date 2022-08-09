@@ -1,33 +1,37 @@
 <mat-card>
   <mat-card-header>
-    <mat-card-title>Barinfo</mat-card-title>
+    <mat-card-title>Infopunt</mat-card-title>
+    <mat-card-subtitle>
+      Voor al je vragen & verloren voorwerpen
+    </mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <mat-list>
-      <mat-list-item>
-        <span class="text">20.00 - 1.45</span>
-        <p> <a [routerLink]="['/', 'map']"
-             [queryParams]="{location: 'K30'}">K30</a> en <a [routerLink]="['/', 'map']"
-             [queryParams]="{location: '30'}">Loods 30</a> (zaterdag)</p>
-      </mat-list-item>
-      <mat-list-item>
-        <span class="text">20.00 - 2.30</span>
-        <p> <a [routerLink]="['/', 'map']"
-             [queryParams]="{location: 'GG'}">Grote grond</a></p>
-      </mat-list-item>
-    </mat-list>
+    <p>
+      Op de <a [routerLink]="['/', 'map']" [queryParams]="{location: 'GG'}">Grote grond</a>
+    </p>
+    <p>
+      Telefonisch bereikbaar op <a href="tel:+32477382412">+32 477 38 24 12</a>
+    </p>
   </mat-card-content>
-</mat-card>
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>Gratis Wifi</mat-card-title>
-    <mat-card-subtitle>Op de grote grond</mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-content>
-    Verbind met onze gratis WiFi op de grote grond.</mat-card-content>
 </mat-card>
 <app-emergency-info>
 </app-emergency-info>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Barinfo</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      De bar op de <a [routerLink]="['/', 'map']" [queryParams]="{location: 'GG'}">grote grond</a> sluit om 02.00
+    </p>
+    <p>
+      De bar van het Zeescoutscafé sluit om 01.30
+    </p>
+    <p>
+      De bar van het Hoppercafé sluit om 01.30
+    </p>
+  </mat-card-content>
+</mat-card>
 <mat-card>
   <mat-card-header>
     <mat-card-title>Gouw gronden</mat-card-title>
@@ -36,63 +40,147 @@
     <mat-list>
       <mat-list-item>
         <span class="text">Antwerpen</span>
-        <p><a [routerLink]="['/', 'map']"
-             [queryParams]="{location: 'K8'}">K8 Zuid</a></p>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'K8'}">Kamp 8 Zuid</a>
+        </p>
       </mat-list-item>
       <mat-list-item>
         <span class="text">Heide</span>
-        <p><a [routerLink]="['/', 'map']"
-             [queryParams]="{location: 'K42'}">K42</a></p>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'K42'}">Kamp 42</a>
+        </p>
       </mat-list-item>
       <mat-list-item>
         <span class="text">Opsinjoor</span>
-        <p><a [routerLink]="['/', 'map']"
-             [queryParams]="{location: 'K10'}">K10</a></p>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'K10'}">Kamp 10</a>
+        </p>
       </mat-list-item>
       <mat-list-item>
         <span class="text">Kempen</span>
-        <p><a [routerLink]="['/', 'map']"
-             [queryParams]="{location: 'K41'}">K41</a></p>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'K41'}">Kamp 41</a>
+        </p>
       </mat-list-item>
       <mat-list-item>
         <span class="text">Webra</span>
-        <p><a [routerLink]="['/', 'map']"
-             [queryParams]="{location: 'K8'}">K8 Noord</a></p>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'K8'}">Kamp 8 Noord</a>
+        </p>
       </mat-list-item>
       <mat-list-item>
         <span class="text">Oost-Brabant</span>
-        <p><a [routerLink]="['/', 'map']"
-             [queryParams]="{location: 'K48'}">K48 Oost</a></p>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'K48'}">Kamp 48 Oost</a>
+        </p>
       </mat-list-item>
       <mat-list-item>
         <span class="text">Limburg</span>
-        <p><a [routerLink]="['/', 'map']"
-             [queryParams]="{location: 'K9'}">K9</a></p>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'K9'}">Kamp 9</a>
+        </p>
       </mat-list-item>
       <mat-list-item>
         <span class="text">Gent</span>
-        <p><a [routerLink]="['/', 'map']"
-             [queryParams]="{location: 'K48'}">K48 West</a></p>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'K48'}">Kamp 48 West</a>
+        </p>
       </mat-list-item>
       <mat-list-item>
         <span class="text">Land van Egmont</span>
-        <p><a [routerLink]="['/', 'map']"
-             [queryParams]="{location: 'K49'}">K49 Zuid</a></p>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'K49'}">Kamp 49 Zuid</a>
+        </p>
       </mat-list-item>
       <mat-list-item>
         <span class="text">Waas</span>
-        <p><a [routerLink]="['/', 'map']"
-             [queryParams]="{location: 'K7'}">K7 Noord</a></p>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'K7'}">Kamp 7 Noord</a>
+        </p>
       </mat-list-item>
       <mat-list-item>
         <span class="text">Noordzee</span>
-        <p><a [routerLink]="['/', 'map']"
-             [queryParams]="{location: 'K49'}">K49 Noord</a></p>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'K49'}">Kamp 49 Noord</a>
+        </p>
       </mat-list-item>
       <mat-list-item>
-        <span class="text">d Zuid-West-Vlaanderen</span>
-        <p><a [routerLink]="['/', 'map']"
-             [queryParams]="{location: 'K7'}">K7 Zuid</a></p>
+        <span class="text">Zuid-West Vlaanderen</span>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'K7'}">Kamp 7 Zuid</a>
+        </p>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Vormingsaanbod op zaterdag</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item>
+        <span class="text">Kapoenen</span>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'K30'}">Kamp 30</a>
+        </p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Kabouters/welpen</span>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'K33'}">Kamp 33</a>
+        </p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Jonggivers</span>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'K34'}">Kamp 34</a>
+        </p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Givers</span>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'vijver'}">Rond vijver</a>
+        </p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Jins</span>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'K40'}">Kamp 40</a>
+        </p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Groepsleiding</span>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'GG'}">Grote grond</a> en<br>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: '11'}">gebouw 11</a>
+        </p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Akabe</span>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'KG'}">Kleine grond</a> en<br>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'K30'}">Loods kamp 30</a>
+        </p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Zeescouting</span>
+        <p>
+          <a [routerLink]="['/', 'map']" [queryParams]="{location: 'vijver'}">Vijver</a>
+        </p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Spel en actie</span>
+        <p>
+          Kampvuurkring op<br>
+          de <a [routerLink]="['/', 'map']" [queryParams]="{location: 'GG'}">grote grond</a>
+        </p>
+      </mat-list-item>
+      <mat-list-item>
+        <span class="text">Help ik stop als leiding</span>
+        <p>
+          Naast <a [routerLink]="['/', 'map']" [queryParams]="{location: '9'}">gebouw 9</a>
+        </p>
       </mat-list-item>
     </mat-list>
   </mat-card-content>

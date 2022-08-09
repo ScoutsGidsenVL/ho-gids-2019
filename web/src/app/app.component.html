@@ -53,25 +53,14 @@
             <mat-icon>report</mat-icon> Leefregels
           </a>
           <a mat-list-item
-             routerLink="/tijd-voor-inspiratie"
-             (click)="sidenav.close()">
-            <mat-icon>stars</mat-icon> Tijd voor inspiratie
-          </a>
-          <a mat-list-item
              routerLink="/contact"
              (click)="sidenav.close()">
             <mat-icon>contact_support</mat-icon> Contact
           </a>
 
-          <mat-divider></mat-divider>
-
-          <h3 mat-subheader>Extra's</h3>
-          <a mat-list-item
-             routerLink="/ploeg-it"
-             (click)="sidenav.close()">
-            <mat-icon>videogame_asset</mat-icon> Geocache spel
-          </a>
           <ng-container *ngIf="serviceWorkerEnabled">
+            <mat-divider></mat-divider>
+            <h3 mat-subheader>Extra's</h3>
             <a *ngIf="!updateAvailable"
                mat-list-item
                (click)="checkForUpdate()">

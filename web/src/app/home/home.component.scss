@@ -1,9 +1,13 @@
 .voorwoord-header-avatar {
-    background-image: url('../../assets/pictures/anton-smagghe-avatar.jpg');
+    background-image: url('../../assets/pictures/jo-deman-avatar.png');
     background-size: cover;
 }
 .voorwoord-header-image {
     max-height: 300px;
+    width: unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 mat-card {

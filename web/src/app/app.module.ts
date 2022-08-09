@@ -20,7 +20,6 @@ import { EmergencyInfoComponent } from './info/emergency-info/emergency-info.com
 import { InfoComponent } from './info/info.component';
 import { LeefregelsComponent } from './info/leefregels/leefregels.component';
 import { PraktischComponent } from './info/praktisch/praktisch.component';
-import { TijdVoorInspiratieComponent } from './info/tijd-voor-inspiratie/tijd-voor-inspiratie.component';
 import { LocationDialogComponent } from './map/location-dialog/location-dialog.component';
 import { MapComponent } from './map/map.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -48,7 +47,6 @@ export class CustomHammerConfig extends HammerGestureConfig {
     AnnualSongComponent,
     PraktischComponent,
     LeefregelsComponent,
-    TijdVoorInspiratieComponent,
     LocationDialogComponent
   ],
   entryComponents: [
